@@ -8,28 +8,31 @@
 */
 
 return [
-    'settings' => [
-        'displayErrorDetails' => true,
-
-        'renderer' => [
-            'template_path' => ROOT . 'templates',
-            'template_cache' => ROOT . 'templates' .DS. 'cache'
-        ],
-
-        'logger' => [
-            'name' => 'gamerecommend',
-            'path' => ROOT . 'logs' . DS . 'app.log',
-        ],
-
-				'db' => [
-						'driver' => 'mysql',
-						'host' => '127.0.0.1',
-						'database' => 'ops',
-						'username' => 'slim',
-						'password' => 'slim',
-						'charset' => 'utf8',
-						'collation' => 'utf8_general_ci',
-						'prefix' => ''
-				],
-    ],
+	'settings' => 
+		[
+			'displayErrorDetails' => true,
+			'renderer' => [
+				'template_path' => ROOT . 'templates',
+				'template_cache' => ROOT . 'templates' .DS. 'cache',
+			],
+			'logger' => [
+				'name' => 'MySlim',
+				'path' => ROOT . 'logs' . DS . 'app.log',
+			],
+			'cache' => [
+				'path' => ROOT . 'cache',
+				'ext' => '.cache'
+			],
+			'db' => [
+				'driver' => 'mysql',
+				'host' => 'localhost',
+				'database' => 'officialsite',
+				'username' => 'officialsite',
+				'password' => 'officialsite',
+				'charset' => 'utf8',
+				'collation' => 'utf8_general_ci',
+				'prefix' => ''
+			],
+			'sitename' => '北京天际时空网络技术有限公司',
+	]
 ];

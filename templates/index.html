@@ -1,35 +1,174 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Slim 3</title>
-        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <style>
-            body {
-                margin: 50px 0 0 0;
-                padding: 0;
-                width: 100%;
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                text-align: center;
-                color: #aaa;
-                font-size: 18px;
-            }
-
-            h1 {
-                color: #719e40;
-                letter-spacing: -3px;
-                font-family: 'Lato', sans-serif;
-                font-size: 100px;
-                font-weight: 200;
-                margin-bottom: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Slim</h1>
-        <div>a microframework for PHP</div>
-
-        <h2>Hello {{ name }}!</h2>
-
-    </body>
-</html>
+{{ include('header.html') }}
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <a href="/"><img src="https://assets-cn.skylinematrix.com/official_site/images/logo.png"></a>
+    </div>
+    <div class="navtext">
+        <ul>
+            <li><a href="/" class="textactive">公司首页</a></li>
+            <li><a href="/newslist.html">新闻公告</a></li>
+            <li><a href="/aboutus.html">公司介绍</a></li>
+			<li><a href="/contact.html">联系我们</a></li>
+			<li><a href="/jiazhang.html" target="_blank">家长监护</a></li>
+        </ul>
+    </div>
+    <div class="region">
+        <div class="top">
+            <p>Select Region</p>
+            <div class="close"></div>
+        </div>
+        <div class="bottom">
+            <p>Please select your country or region</p>
+            <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">India</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="text-align:center;clear:both">
+<div class="banner" id="banner">
+    <a href="#" class="thumbnail"><img src="https://assets-cn.skylinematrix.com/official_site/images/index_mhsy_1.png"></a>
+    <a href="#" class="thumbnail"><img src="https://assets-cn.skylinematrix.com/official_site/images/index_dmw_1.png"></a>
+    <a href="#" class="thumbnail"><img src="https://assets-cn.skylinematrix.com/official_site/images/index_dhmsg_1.png"></a>
+    <a href="#" class="thumbnail"><img src="https://assets-cn.skylinematrix.com/official_site/images/index_lzsg_1.png"></a>
+    <div class="change" id="banner_id">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<div style="text-align:center;clear:both">
+<div class="main">
+    <div class="row_top">
+        <h3>推荐游戏</h3>
+        <div class="box"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <div class="pic">
+                <a href="/game/mhsy.html"></a>
+                <img src="https://assets-cn.skylinematrix.com/official_site/images/index_mhsy.png">
+            </div>
+            <div class="tex" style="width: 100%">
+                <h5>梦幻神域</h5>
+                <p>独创首款Q萌战斗手游。超人气刀剑动漫题材，<br />高度还原人物原型，让您置身于动漫的国度。</p>
+            </div>
+            <div class="button">
+                <a href="https://itunes.apple.com/kr/app/ebeo-sigan-ui-jogag/id1070853226?l=zh&ls=1&mt=8" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/iosbnt.png"></a>
+                <a href="http://down.feiliu.com/game?gameid=10007&cid=300021&qrcode=0&type=1&plat=1" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/androidbnt.png"></a>
+                <!--<div class="countrybtn">
+                    <p>韩国</p>
+                </div>-->
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="pic">
+                <a href="/game/dmw.html"></a>
+                <img src="https://assets-cn.skylinematrix.com/official_site/images/index_dmw.png">
+            </div>
+            <div class="tex" style="width: 100%">
+                <h5>十万个大魔王</h5>
+                <p>创新轻冒险手游《十万个大魔王》！游戏主打手控点击、多线养成、卡牌收集四大特色。</p>
+            </div>
+            <div class="button">
+                <a href="https://itunes.apple.com/kr/app/ebeo-sigan-ui-jogag/id1076506600?l=zh&ls=1&mt=8" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/iosbnt.png"></a>
+                <a href="http://cdn.dmw.hardtime.cn/dmw_hd_baidu_05.apk" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/androidbnt.png"></a>
+                <!--<div class="countrybtn">
+                    <p>韩国</p>
+                </div>-->
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3" id="right">
+            <div class="pic">
+                <a href="/game/dhmsg.html"></a>
+                <img src="https://assets-cn.skylinematrix.com/official_site/images/index_dhmsg.png">
+            </div>
+            <div class="tex" style="width: 100%">
+                <h5>大话梦三国</h5>
+                <p>天下大势，贱久必萌，萌久必贱！Q萌策略卡牌手游，让你掌控最贱的三国武将、最萌的三国军师。</p>
+            </div>
+            <div class="button">
+                <a href="https://itunes.apple.com/kr/app/ebeo-sigan-ui-jogag/id1118833173?l=zh&ls=1&mt=8" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/iosbnt.png"></a>
+                <a href="http://downali.game.uc.cn/wm/3/19/sgcraft_uc_0411_3642707_163517caf32f.apk" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/androidbnt.png"></a>
+                <!--<div class="countrybtn">
+                    <p>韩国</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-6 col-md-3" style="margin-bottom: 30px">
+            <div class="pic">
+                <a href="/game/lzsg.html"></a>
+                <img src="https://assets-cn.skylinematrix.com/official_site/images/index_lzsg.png">
+            </div>
+            <div class="tex" style="width: 100%">
+                <h5>龙珠三国</h5>
+                <p>国内首款9v9立体策略对战手游,游戏突破传统卡牌游戏,摒弃老套竖屏布局,首创9V9纵深布阵,实现横屏多人火拼!</p>
+            </div>
+            <div class="button">
+                <a href="https://itunes.apple.com/vn/app/id1066283834" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/iosbnt.png"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.skylinematrix.google.lzsgvn" target="_blank"><img src="https://assets-cn.skylinematrix.com/official_site/images/androidbnt.png"></a>
+                <!--<div class="countrybtn">
+                    <p>越南</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bottom">
+        <a href="#" class="bottombtn">
+            <p>更多游戏</p>
+        </a>
+    </div> -->
+</div>
+<!--
+<div class="news">
+    <div class="row_top">
+        <h3>新闻公告</h3>
+        <div class="box"></div>
+    </div>
+    <div class="row_bottom">
+        <div class="left">
+            <div class="title">
+                <h4>新闻动态</h4>
+                <p><a href="#">更多>></a></p>
+            </div>
+            <ul>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+            </ul>
+        </div>
+        <div class="left" id="mainright">
+            <div class="title">
+                <h4>新闻动态</h4>
+                <p><a>更多>></a></p>
+            </div>
+            <ul>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+                <li><a href="#">积极备战中，新服即将火爆开幕<span>[4-6]</span></a></li>
+            </ul>
+        </div>
+        <div class="last"></div>
+    </div>
+</div>
+-->
+{{ include('footer.html') }}

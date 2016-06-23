@@ -13,12 +13,18 @@ define("VENDORDIR", ROOT . "vendor" . DS);
 define("SRCDIR", ROOT . "src" . DS);
 define("ROUTERDIR",SRCDIR . "routers" . DS);
 
-require(VENDORDIR . 'autoload.php');
+error_reporting(E_ALL ^ E_NOTICE);
+
+if(file_exists(VENDORDIR . "autoload.php"))
+{
+	require(VENDORDIR . 'autoload.php');
+}else
+{
+	die("<pre>Run 'composer.phar install' in root dir</pre>");
+}
 
 $settings = require(SRCDIR . 'settings.php');
-$app = new \Slim\App($settings);
-require(SRCDIR . 'dependencies.php');
-require(SRCDIR . 'middleware.php');
+require(SRCDIR . 'bootstrap.php');
 
 foreach(glob(ROUTERDIR . '*.php') AS $router) {
     require_once $router;

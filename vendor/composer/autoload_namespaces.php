@@ -6,8 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Upload' => array($vendorDir . '/codeguy/upload/src'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
-    'Pimple' => array($vendorDir . '/pimple/pimple/src'),
+    'SlimServices' => array($vendorDir . '/itsgoingd/slim-services'),
+    'Purl' => array($vendorDir . '/jwage/purl/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
+    'Pimple' => array($vendorDir . '/pimple/pimple/src'),
+    'Pdp\\' => array($vendorDir . '/jeremykendall/php-domain-parser/library'),
+    'Moontoast\\Math' => array($vendorDir . '/moontoast/math/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
 );
