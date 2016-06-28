@@ -1,4 +1,4 @@
-# my_slim
+# Yeeslim
 
 Slim开发框架
 
@@ -16,4 +16,7 @@ Slim开发框架
 - jeremykendall/php-domain-parser  1.3.1  
 - jwage/purl v0.0.7  
 - templatelite(类似Smarty的模板引擎)  
+
+
+Demo：<http://testslim.dl8.co/>
 

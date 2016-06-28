@@ -7,8 +7,8 @@
 * @date 2016-05-09 11:43:49
 */
 
-class Duanzi extends Illuminate\Database\Eloquent\Model
+class Posts extends Illuminate\Database\Eloquent\Model
 {
-	protected $table = 'duanzi';
-    public $timestamp = false;
+	protected $table = 'wp_posts';
+	public $timestamp = false;
 }
