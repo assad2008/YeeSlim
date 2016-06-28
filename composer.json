@@ -25,7 +25,13 @@
         "tuupola/slim-basic-auth": "^2.0"
     },
     "autoload": {
-        "classmap": ["src/models","src/libs"],
-		"files":["src/func/functions.php"]
+        "classmap":[
+						"src/models",
+						"src/libs"
+					],
+		"files":[
+					"src/func/functions.php",
+					"vendor/template_lite/src/class.template.php"
+				]
     }
 }

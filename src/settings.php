@@ -33,6 +33,10 @@ return [
 				'collation' => 'utf8_general_ci',
 				'prefix' => ''
 			],
-			'sitename' => '北京天际时空网络技术有限公司',
+			'smarty' => [
+				'compile_dir' => ROOT . 'templates' . DS . 'compiled',
+				'template_dir' => ROOT . 'templates' . DS . 'templates',
+			],
+			'sitename' => 'slim',
 	]
 ];

@@ -47,6 +47,14 @@ $container['db'] = function($c) use ($db) {
 	return $db;
 };
 
+$container['smarty'] = function($c)
+{
+	$tpl = new Template_Lite;
+	$tpl->compile_dir = $c->get('settings')['smarty']['compile_dir'];
+	$tpl->template_dir = $c->get('settings')['smarty']['template_dir'];
+	return $tpl;
+};
+
 $container['cache'] = function($c){
 	$cache = new \Doctrine\Common\Cache\FilesystemCache($c->get('settings')['cache']['path'],$c->get('settings')['cache']['ext']);
 	return $cache;

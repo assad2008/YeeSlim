@@ -12,8 +12,8 @@ use \Psr\Http\Message\ResponseInterface as Response;
 
 $app->get('/', function(Request $request, Response $response, $args) use ($app)
 {
-	$title = $this->config->get('sitename');
-	return $this->view->render($response, 'index.html',['title' => $title]);
+	$this->smarty->assign('h','hello world');
+	return $this->smarty->fetch('index.html');
 });
 
 
