@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
-    'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'UAParser\\' => array($vendorDir . '/ua-parser/uap-php/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
@@ -36,7 +35,6 @@ return array(
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
-    'Dopesong\\Slim\\Error\\' => array($vendorDir . '/dopesong/slim-whoops/src'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
 );

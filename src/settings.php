@@ -11,10 +11,6 @@ return [
 	'settings' => 
 		[
 			'displayErrorDetails' => true,
-			'renderer' => [
-				'template_path' => ROOT . 'templates',
-				'template_cache' => ROOT . 'templates' .DS. 'cache',
-			],
 			'logger' => [
 				'name' => 'MySlim',
 				'path' => ROOT . 'logs' . DS . 'app.log',

@@ -18,11 +18,11 @@
         "ua-parser/uap-php": "^3.4",
         "hashids/hashids": "^1.0",
         "codeguy/upload": "^1.3",
-        "dopesong/slim-whoops": "^2.0",
         "illuminate/pagination": "^5.2",
         "itsgoingd/slim-services": "^1.0",
         "akrabat/rka-ip-address-middleware": "^0.4.0",
-        "tuupola/slim-basic-auth": "^2.0"
+        "tuupola/slim-basic-auth": "^2.0",
+        "tracy/tracy": "^2.4"
     },
     "autoload": {
         "classmap":[

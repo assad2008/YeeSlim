@@ -55,7 +55,7 @@ class App
      *
      * @var string
      */
-    const VERSION = '3.4.2';
+    const VERSION = '3.5.0';
 
     /**
      * Container
@@ -428,6 +428,7 @@ class App
     {
         // Get the route info
         $routeInfo = $request->getAttribute('routeInfo');
+
         /** @var \Slim\Interfaces\RouterInterface $router */
         $router = $this->container->get('router');
 

@@ -23,6 +23,10 @@ if(file_exists(VENDORDIR . "autoload.php"))
 	die("<pre>Run 'composer.phar install' in root dir</pre>");
 }
 
+use Tracy\Debugger;
+Debugger::enable(Debugger::DEVELOPMENT);
+Debugger::$showBar = False;
+
 $settings = require(SRCDIR . 'settings.php');
 require(SRCDIR . 'bootstrap.php');
 
