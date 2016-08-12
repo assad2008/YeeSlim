@@ -9,6 +9,7 @@ return array(
     'Upload' => array($vendorDir . '/codeguy/upload/src'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'SlimServices' => array($vendorDir . '/itsgoingd/slim-services'),
+    'Requests' => array($vendorDir . '/rmccue/requests/library'),
     'Purl' => array($vendorDir . '/jwage/purl/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),

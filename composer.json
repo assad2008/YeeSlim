@@ -10,7 +10,6 @@
         "ramsey/uuid": "^3.4",
         "moontoast/math": "^1.1",
         "cebe/markdown": "^1.1",
-        "guzzlehttp/guzzle": "^6.2",
         "jwage/purl": "^0.0.7",
         "phpmailer/phpmailer": "^5.2",
         "fightbulc/moment": "^1.20",
@@ -22,7 +21,8 @@
         "itsgoingd/slim-services": "^1.0",
         "akrabat/rka-ip-address-middleware": "^0.4.0",
         "tuupola/slim-basic-auth": "^2.0",
-        "tracy/tracy": "^2.4"
+        "tracy/tracy": "^2.4",
+        "rmccue/requests": "^1.6"
     },
     "autoload": {
         "classmap":[
