@@ -11,7 +11,6 @@ return array(
     'SlimServices' => array($vendorDir . '/itsgoingd/slim-services'),
     'Requests' => array($vendorDir . '/rmccue/requests/library'),
     'Purl' => array($vendorDir . '/jwage/purl/src'),
-    'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'Pdp\\' => array($vendorDir . '/jeremykendall/php-domain-parser/library'),
     'Moontoast\\Math' => array($vendorDir . '/moontoast/math/src'),

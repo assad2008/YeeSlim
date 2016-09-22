@@ -96,6 +96,7 @@ echo $m->format('[Wochentag:] l'); // e.g. Wochentag: Mittwoch
 
 __Supported languages so far:__
 
+```ar_TN``` Arabic (Tunisia)  
 ```ca_ES``` Catalan  
 ```zh_CN``` Chinese  
 ```zh_TW``` Chinese (traditional)  
@@ -125,6 +126,16 @@ $m = new \Moment\Moment('2012-04-25T03:00:00', 'CET');
 echo $m->setTimezone('UTC')->format(); // 2012-04-25T01:00:00+0000
 ```
 
+#### Change default timezone
+
+```php
+\Moment\Moment::setDefaultTimezone('CET');
+
+$m = new \Moment\Moment('2016-09-13T14:32:06');
+echo $m->format(); // 2016-09-13T14:32:06+0100
+```
+
+
 -------------------------------------------------
 
 ### Custom format
@@ -151,6 +162,8 @@ $m = new \Moment\Moment('2012-04-25T03:00:00', 'CET');
 // format with moment.js definitions
 echo $m->format('LLLL', new \Moment\CustomFormats\MomentJs()); // Wednesday, April 25th 2012 3:00 AM
 ```
+
+`Custom formats` can also come as part of every `Locale`. If it does not exist for your locale yet go ahead and add it. See an example for the [French locale](https://github.com/fightbulc/moment.php/blob/master/src/Locales/fr_FR.php). 
 
 #### III. Easy text escaping
 
@@ -390,6 +403,17 @@ You can now run through the result and put it formatted into a drop-down field o
 -------------------------------------------------
 
 # Changelog
+
+### 1.22.0
+ - added:
+    - Change default timezone
+- fixed:
+    - FormatsInterface docs
+    
+### 1.21.0
+ - added:
+    - Arabic locale
+    - Custom format on locale level
 
 ### 1.20.9
  - fixed:
