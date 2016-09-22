@@ -1,4 +1,6 @@
 {
+	"name": "Yeeslim",
+	"description": "我自用的SLIM框架",
     "require": {
         "slim/slim": "^3.4",
         "illuminate/database": "^5.2",
