@@ -1,39 +1,39 @@
 {
-	"name": "Yeeslim",
+	"name": "Yee/Yeeslim",
 	"description": "我自用的SLIM框架",
-    "require": {
-        "slim/slim": "^3.4",
-        "illuminate/database": "^5.2",
-        "twig/twig": "^1.24",
-        "slim/twig-view": "^2.1",
-        "slim/csrf": "^0.7.0",
-        "monolog/monolog": "^1.19",
-        "doctrine/cache": "^1.6",
-        "ramsey/uuid": "^3.4",
-        "moontoast/math": "^1.1",
-        "cebe/markdown": "^1.1",
-        "jwage/purl": "^0.0.7",
-        "phpmailer/phpmailer": "^5.2",
-        "fightbulc/moment": "^1.20",
-        "predis/predis": "^1.1",
-        "ua-parser/uap-php": "^3.4",
-        "hashids/hashids": "^1.0",
-        "codeguy/upload": "^1.3",
-        "illuminate/pagination": "^5.2",
-        "itsgoingd/slim-services": "^1.0",
-        "akrabat/rka-ip-address-middleware": "^0.4.0",
-        "tuupola/slim-basic-auth": "^2.0",
-        "tracy/tracy": "^2.4",
-        "rmccue/requests": "^1.6"
-    },
-    "autoload": {
-        "classmap":[
-						"src/models",
-						"src/libs"
-					],
+	"require": {
+		"slim/slim": "^3.4",
+		"illuminate/database": "^5.2",
+		"twig/twig": "^1.24",
+		"slim/twig-view": "^2.1",
+		"slim/csrf": "^0.7.0",
+		"monolog/monolog": "^1.19",
+		"doctrine/cache": "^1.6",
+		"ramsey/uuid": "^3.4",
+		"moontoast/math": "^1.1",
+		"cebe/markdown": "^1.1",
+		"jwage/purl": "^0.0.7",
+		"phpmailer/phpmailer": "^5.2",
+		"fightbulc/moment": "^1.20",
+		"predis/predis": "^1.1",
+		"ua-parser/uap-php": "^3.4",
+		"hashids/hashids": "^1.0",
+		"codeguy/upload": "^1.3",
+		"illuminate/pagination": "^5.2",
+		"itsgoingd/slim-services": "^1.0",
+		"akrabat/rka-ip-address-middleware": "^0.4.0",
+		"tuupola/slim-basic-auth": "^2.0",
+		"tracy/tracy": "^2.4",
+		"rmccue/requests": "^1.6"
+	},
+	"autoload": {
+		"classmap":[
+			"src/models",
+			"src/libs"
+		],
 		"files":[
-					"src/func/functions.php",
-					"vendor/template_lite/src/class.template.php"
-				]
-    }
+			"src/func/functions.php",
+			"vendor/template_lite/src/class.template.php"
+		]
+	}
 }
