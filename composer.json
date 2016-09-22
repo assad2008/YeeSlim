@@ -1,5 +1,5 @@
 {
-	"name": "Yee/Yeeslim",
+	"name": "yee/yeeslim",
 	"description": "我自用的SLIM框架",
 	"require": {
 		"slim/slim": "^3.4",
