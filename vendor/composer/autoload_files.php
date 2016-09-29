@@ -11,6 +11,6 @@ return array(
     '253c157292f75eb38082b5acb06f3f01' => $vendorDir . '/nikic/fast-route/src/functions.php',
     '72579e7bd17821bb1321b87411366eae' => $vendorDir . '/illuminate/support/helpers.php',
     '7745382c92b7799bf1294b1f43023ba2' => $vendorDir . '/tracy/tracy/src/shortcuts.php',
-    '4ffdc5de3de11b9f8fea4aca3849aacd' => $baseDir . '/src/func/functions.php',
-    '0b947d24cd4bfccf1b42fcb5050ae732' => $vendorDir . '/template_lite/src/class.template.php',
+    'a630172eaa9c0ebea1574d4268022476' => $baseDir . '/src/func/functions.php',
+    '8e89ecc53dec3973b10f0c8476f77c04' => $vendorDir . '/template_lite/src/class.template.php',
 );

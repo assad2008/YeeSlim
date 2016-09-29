@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c2cb9da667081792084ce01458fd23b8",
-    "content-hash": "0318969698ac6b44a5b47bc12202e648",
+    "hash": "97aa5c9fb0c3561cf102e876c22462b1",
+    "content-hash": "176880f22a0ed2ee8d89fa26ddb62e7e",
     "packages": [
         {
             "name": "akrabat/rka-ip-address-middleware",
@@ -876,7 +876,7 @@
         },
         {
             "name": "kosinix/grafika",
-            "version": "dev-master",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kosinix/grafika.git",
@@ -2430,9 +2430,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "kosinix/grafika": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
