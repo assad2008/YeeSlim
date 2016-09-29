@@ -7,9 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Upload' => array($vendorDir . '/codeguy/upload/src'),
-    'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'SlimServices' => array($vendorDir . '/itsgoingd/slim-services'),
-    'Requests' => array($vendorDir . '/rmccue/requests/library'),
     'Purl' => array($vendorDir . '/jwage/purl/src'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'Pdp\\' => array($vendorDir . '/jeremykendall/php-domain-parser/library'),

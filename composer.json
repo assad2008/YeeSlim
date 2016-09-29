@@ -5,8 +5,6 @@
 	"require": {
 		"slim/slim": "^3.4",
 		"illuminate/database": "^5.2",
-		"twig/twig": "^1.24",
-		"slim/twig-view": "^2.1",
 		"slim/csrf": "^0.7.0",
 		"monolog/monolog": "^1.19",
 		"doctrine/cache": "^1.6",
@@ -25,11 +23,12 @@
 		"akrabat/rka-ip-address-middleware": "^0.4.0",
 		"tuupola/slim-basic-auth": "^2.0",
 		"tracy/tracy": "^2.4",
-		"rmccue/requests": "^1.6",
 		"gregwar/captcha": "^1.1",
 		"ucsdmath/pagination": "^1.9",
 		"ngfw/recipe": "^1.2",
-		"kosinix/grafika": "~2"
+		"kosinix/grafika": "~2",
+		"guzzlehttp/guzzle": "~5",
+		"league/flysystem": "^1.0"
 	},
 	"autoload": {
 		"classmap":[

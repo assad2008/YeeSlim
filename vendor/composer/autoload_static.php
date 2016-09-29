@@ -11,6 +11,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         'a630172eaa9c0ebea1574d4268022476' => __DIR__ . '/../..' . '/src/func/functions.php',
         '8e89ecc53dec3973b10f0c8476f77c04' => __DIR__ . '/..' . '/template_lite/src/class.template.php',
@@ -40,13 +41,13 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Console\\' => 26,
-            'Slim\\Views\\' => 11,
             'Slim\\Middleware\\' => 16,
             'Slim\\Csrf\\' => 10,
             'Slim\\' => 5,
         ),
         'R' => 
         array (
+            'React\\Promise\\' => 14,
             'Ramsey\\Uuid\\' => 12,
             'RKA\\Middleware\\' => 15,
         ),
@@ -60,6 +61,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             'Monolog\\' => 8,
             'Moment\\' => 7,
+        ),
+        'L' => 
+        array (
+            'League\\Flysystem\\' => 17,
         ),
         'I' => 
         array (
@@ -76,6 +81,9 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         ),
         'G' => 
         array (
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\Ring\\' => 16,
+            'GuzzleHttp\\' => 11,
             'Gregwar\\Captcha\\' => 16,
             'Grafika\\' => 8,
         ),
@@ -142,10 +150,6 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Slim\\Views\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/slim/twig-view/src',
-        ),
         'Slim\\Middleware\\' => 
         array (
             0 => __DIR__ . '/..' . '/tuupola/slim-basic-auth/src',
@@ -157,6 +161,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'React\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise/src',
         ),
         'Ramsey\\Uuid\\' => 
         array (
@@ -186,6 +194,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             0 => __DIR__ . '/..' . '/fightbulc/moment/src',
         ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
@@ -213,6 +225,18 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'Hashids\\' => 
         array (
             0 => __DIR__ . '/..' . '/hashids/hashids/lib/Hashids',
+        ),
+        'GuzzleHttp\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
+        ),
+        'GuzzleHttp\\Ring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Gregwar\\Captcha\\' => 
         array (
@@ -244,25 +268,11 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
                 0 => __DIR__ . '/..' . '/codeguy/upload/src',
             ),
         ),
-        'T' => 
-        array (
-            'Twig_' => 
-            array (
-                0 => __DIR__ . '/..' . '/twig/twig/lib',
-            ),
-        ),
         'S' => 
         array (
             'SlimServices' => 
             array (
                 0 => __DIR__ . '/..' . '/itsgoingd/slim-services',
-            ),
-        ),
-        'R' => 
-        array (
-            'Requests' => 
-            array (
-                0 => __DIR__ . '/..' . '/rmccue/requests/library',
             ),
         ),
         'P' => 
