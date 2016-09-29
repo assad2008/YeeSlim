@@ -1,0 +1,15 @@
+engines:
+  phpmd:
+    enabled: true
+    config:
+      file_extensions: "php"
+    checks:
+      Naming/ShortMethodName:
+        enabled: false
+      Naming/LongVariable:
+        enabled: false
+ratings:
+    paths:
+      - "**.php"
+exclude_paths:
+- tests/

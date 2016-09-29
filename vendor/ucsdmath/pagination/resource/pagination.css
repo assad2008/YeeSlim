@@ -1,0 +1,58 @@
+/**
+ * This file is part of the UCSDMath package.
+ *
+ * (c) 2015-2016 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * UCSDMath Framework Components: Pagination css examples
+ *
+ * @file    pagination.css
+ * @author  Daryl Eisner <deisner@math.ucsd.edu>
+ * @version 1.9.0
+ * @date    2016-08-21
+ */
+
+.paging-container {
+    width: 345px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.paging-container-no-show-records {
+    width: 230px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.fl { float: left }
+
+.no-pe { pointer-events: none }
+
+.paging-select {
+    width: 90px;
+    float: left;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#paginator-items-per-page {
+    width: 40px;
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #1A87B9;
+    padding: 3px;
+    margin: 2px 2px 2px 1px;
+}
+
+#button-pagination-show {
+    float: left;
+    margin: 4px 4px 4px 8px;
+}

@@ -6,7 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ngfw\\' => array($vendorDir . '/ngfw/recipe/src/ngfw'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'UCSDMath\\Pagination\\Exception\\' => array($vendorDir . '/ucsdmath/pagination/src/Pagination/Exception'),
+    'UCSDMath\\Pagination\\' => array($vendorDir . '/ucsdmath/pagination/src/Pagination'),
+    'UCSDMath\\Functions\\' => array($vendorDir . '/ucsdmath/functions/src/Functions'),
     'UAParser\\' => array($vendorDir . '/ua-parser/uap-php/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
@@ -32,6 +36,8 @@ return array(
     'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
     'Illuminate\\Container\\' => array($vendorDir . '/illuminate/container'),
     'Hashids\\' => array($vendorDir . '/hashids/hashids/lib/Hashids'),
+    'Gregwar\\Captcha\\' => array($vendorDir . '/gregwar/captcha'),
+    'Grafika\\' => array($vendorDir . '/kosinix/grafika/src/Grafika'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),

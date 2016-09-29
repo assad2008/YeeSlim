@@ -1,0 +1,10 @@
+vendor/
+composer.phar
+composer.lock
+composer-test.lock
+phpunit.xml
+.php_cs.cache
+packages.json
+src/dev/
+dist/
+ucsdmath-build-x.yml

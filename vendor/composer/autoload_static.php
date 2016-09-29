@@ -7,22 +7,29 @@ namespace Composer\Autoload;
 class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
 {
     public static $files = array (
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
-        '9c64281bcba825454ff69313e257a566' => __DIR__ . '/../..' . '/src/func/functions.php',
-        '38db2be9b1cd05b253dc4f1af062b4b7' => __DIR__ . '/..' . '/template_lite/src/class.template.php',
+        '4ffdc5de3de11b9f8fea4aca3849aacd' => __DIR__ . '/../..' . '/src/func/functions.php',
+        '0b947d24cd4bfccf1b42fcb5050ae732' => __DIR__ . '/..' . '/template_lite/src/class.template.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'n' => 
+        array (
+            'ngfw\\' => 5,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
         ),
         'U' => 
         array (
+            'UCSDMath\\Pagination\\Exception\\' => 30,
+            'UCSDMath\\Pagination\\' => 20,
+            'UCSDMath\\Functions\\' => 19,
             'UAParser\\' => 9,
         ),
         'S' => 
@@ -67,6 +74,11 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             'Hashids\\' => 8,
         ),
+        'G' => 
+        array (
+            'Gregwar\\Captcha\\' => 16,
+            'Grafika\\' => 8,
+        ),
         'F' => 
         array (
             'FastRoute\\' => 10,
@@ -82,9 +94,25 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
     );
 
     public static $prefixDirsPsr4 = array (
+        'ngfw\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ngfw/recipe/src/ngfw',
+        ),
         'cebe\\markdown\\' => 
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
+        ),
+        'UCSDMath\\Pagination\\Exception\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ucsdmath/pagination/src/Pagination/Exception',
+        ),
+        'UCSDMath\\Pagination\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ucsdmath/pagination/src/Pagination',
+        ),
+        'UCSDMath\\Functions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ucsdmath/functions/src/Functions',
         ),
         'UAParser\\' => 
         array (
@@ -185,6 +213,14 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'Hashids\\' => 
         array (
             0 => __DIR__ . '/..' . '/hashids/hashids/lib/Hashids',
+        ),
+        'Gregwar\\Captcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gregwar/captcha',
+        ),
+        'Grafika\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kosinix/grafika/src/Grafika',
         ),
         'FastRoute\\' => 
         array (

@@ -110,12 +110,15 @@ __Supported languages so far:__
 ```in_ID``` Indonesian  
 ```it_IT``` Italian  
 ```ja_JP``` Japanese  
+```oc_LNC``` Lengadocian    
+```pl_PL``` Polish  
 ```pl_PL``` Polish  
 ```pt_BR``` Portuguese (Brazil)  
 ```ru_RU``` Russian (Basic version)  
 ```es_ES``` Spanish (Europe)  
 ```se_SV``` Swedish  
 ```th_TH``` Thai  
+```vi_VN``` Vietnamese  
 
 -------------------------------------------------
 
@@ -403,6 +406,15 @@ You can now run through the result and put it formatted into a drop-down field o
 -------------------------------------------------
 
 # Changelog
+
+### 1.23.1
+ - fixed:
+    - Lengadocian locale  
+
+### 1.23.0
+ - added:
+    - Vietnamese locale
+    - Lengadocian locale  
 
 ### 1.22.0
  - added:

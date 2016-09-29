@@ -1,0 +1,40 @@
+{
+    "name": "ucsdmath/functions",
+    "type": "library",
+    "description": "A supporting set of commonly used functions.",
+    "keywords": ["functions", "ucsdmath", "component"],
+    "homepage": "https://github.com/ucsdmath",
+    "license": "MIT",
+    "time": "2016-08-21",
+    "authors": [
+        {
+            "name": "Daryl Eisner",
+            "email": "deisner@ucsd.edu"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "nesbot/carbon": "1.21.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.5",
+        "phpunit/phpunit": "5.5.2",
+        "fzaninotto/faker": "1.6.0",
+        "ucsdmath/testing": "1.9.0",
+        "squizlabs/php_codesniffer": "2.6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "UCSDMath\\Functions\\": "src/Functions/"
+        }
+    },
+    "suggest": {
+        "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes."
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.9-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}

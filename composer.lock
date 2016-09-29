@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "551ab6a2108511682e54abb53d746021",
-    "content-hash": "faef63d0b35649fddec38172e94727de",
+    "hash": "c2cb9da667081792084ce01458fd23b8",
+    "content-hash": "0318969698ac6b44a5b47bc12202e648",
     "packages": [
         {
             "name": "akrabat/rka-ip-address-middleware",
@@ -324,16 +324,16 @@
         },
         {
             "name": "fightbulc/moment",
-            "version": "1.22.0",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fightbulc/moment.php.git",
-                "reference": "41335e6c761d27a4255e3377beb316b12a74d769"
+                "reference": "b8e50ad6d3db387b3f143a6ff6a314ef92e17ab7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/41335e6c761d27a4255e3377beb316b12a74d769",
-                "reference": "41335e6c761d27a4255e3377beb316b12a74d769",
+                "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/b8e50ad6d3db387b3f143a6ff6a314ef92e17ab7",
+                "reference": "b8e50ad6d3db387b3f143a6ff6a314ef92e17ab7",
                 "shasum": ""
             },
             "require": {
@@ -383,7 +383,55 @@
                 "translation",
                 "validate"
             ],
-            "time": "2016-09-13 14:20:19"
+            "time": "2016-09-28 06:17:33"
+        },
+        {
+            "name": "gregwar/captcha",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gregwar/Captcha.git",
+                "reference": "1240ab993ca713680573b2d4166900da5f758623"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gregwar/Captcha/zipball/1240ab993ca713680573b2d4166900da5f758623",
+                "reference": "1240ab993ca713680573b2d4166900da5f758623",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "captcha",
+            "autoload": {
+                "psr-4": {
+                    "Gregwar\\Captcha\\": "/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Passault",
+                    "email": "g.passault@gmail.com",
+                    "homepage": "http://www.gregwar.com/"
+                },
+                {
+                    "name": "Jeremy Livingston",
+                    "email": "jeremy.j.livingston@gmail.com"
+                }
+            ],
+            "description": "Captcha generator",
+            "homepage": "https://github.com/Gregwar/Captcha",
+            "keywords": [
+                "bot",
+                "captcha",
+                "spam"
+            ],
+            "time": "2015-09-11 15:23:20"
         },
         {
             "name": "hashids/hashids",
@@ -827,6 +875,47 @@
             "time": "2016-03-05 16:40:31"
         },
         {
+            "name": "kosinix/grafika",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kosinix/grafika.git",
+                "reference": "97e8aca0849202346e8534c96833354aa792d134"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kosinix/grafika/zipball/97e8aca0849202346e8534c96833354aa792d134",
+                "reference": "97e8aca0849202346e8534c96833354aa792d134",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grafika\\": "src/Grafika"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nico Amarilla",
+                    "homepage": "https://www.kosinix.com"
+                }
+            ],
+            "description": "An image manipulation library for PHP.",
+            "homepage": "http://kosinix.github.io/grafika",
+            "keywords": [
+                "grafika"
+            ],
+            "time": "2016-09-27 08:31:11"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.21.0",
             "source": {
@@ -986,6 +1075,45 @@
                 "time"
             ],
             "time": "2015-11-04 20:07:17"
+        },
+        {
+            "name": "ngfw/recipe",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ngfw/Recipe.git",
+                "reference": "cdc1b8a65aa1598634401bcf2c9b881cfc572b05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ngfw/Recipe/zipball/cdc1b8a65aa1598634401bcf2c9b881cfc572b05",
+                "reference": "cdc1b8a65aa1598634401bcf2c9b881cfc572b05",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ngfw\\": "src/ngfw/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nick G",
+                    "email": "gejadze@gmail.com"
+                }
+            ],
+            "description": "Small Collection of useful PHP functions",
+            "time": "2016-09-25 01:51:29"
         },
         {
             "name": "nikic/fast-route",
@@ -2024,20 +2152,21 @@
         },
         {
             "name": "tuupola/slim-basic-auth",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tuupola/slim-basic-auth.git",
-                "reference": "e2f810d7317cde69d7ff042e774edbdb7bb5fb41"
+                "reference": "98dc4679e742c53171efaff042659d60a3160606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tuupola/slim-basic-auth/zipball/e2f810d7317cde69d7ff042e774edbdb7bb5fb41",
-                "reference": "e2f810d7317cde69d7ff042e774edbdb7bb5fb41",
+                "url": "https://api.github.com/repos/tuupola/slim-basic-auth/zipball/98dc4679e742c53171efaff042659d60a3160606",
+                "reference": "98dc4679e742c53171efaff042659d60a3160606",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0"
+                "php": "^5.5 || ^7.0",
+                "psr/http-message": "^1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.3",
@@ -2068,7 +2197,7 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2016-09-16 15:36:46"
+            "time": "2016-09-21 20:50:02"
         },
         {
             "name": "twig/twig",
@@ -2179,12 +2308,131 @@
             ],
             "description": "A multi-language port of Browserscope's user agent parser.",
             "time": "2016-07-09 13:53:59"
+        },
+        {
+            "name": "ucsdmath/functions",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ucsdmath/Functions.git",
+                "reference": "677ec446a111be7ec9d854a4a50f36460040ec43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ucsdmath/Functions/zipball/677ec446a111be7ec9d854a4a50f36460040ec43",
+                "reference": "677ec446a111be7ec9d854a4a50f36460040ec43",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "1.21.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.6.0",
+                "mockery/mockery": "0.9.5",
+                "phpunit/phpunit": "5.5.2",
+                "squizlabs/php_codesniffer": "2.6.2",
+                "ucsdmath/testing": "1.9.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UCSDMath\\Functions\\": "src/Functions/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daryl Eisner",
+                    "email": "deisner@ucsd.edu"
+                }
+            ],
+            "description": "A supporting set of commonly used functions.",
+            "homepage": "https://github.com/ucsdmath",
+            "keywords": [
+                "component",
+                "functions",
+                "ucsdmath"
+            ],
+            "time": "2016-08-21 00:00:00"
+        },
+        {
+            "name": "ucsdmath/pagination",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ucsdmath/Pagination.git",
+                "reference": "0a44f96ce4273c66218ae27ac608a02ed25de980"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ucsdmath/Pagination/zipball/0a44f96ce4273c66218ae27ac608a02ed25de980",
+                "reference": "0a44f96ce4273c66218ae27ac608a02ed25de980",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "ucsdmath/functions": "1.9.0"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.6.0",
+                "mockery/mockery": "0.9.5",
+                "phpunit/phpunit": "5.5.2",
+                "squizlabs/php_codesniffer": "2.6.2",
+                "ucsdmath/testing": "1.9.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "UCSDMath\\Pagination\\": "src/Pagination/",
+                    "UCSDMath\\Pagination\\Exception\\": "src/Pagination/Exception/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daryl Eisner",
+                    "email": "deisner@ucsd.edu"
+                }
+            ],
+            "description": "Simple pagination routines.",
+            "homepage": "https://github.com/ucsdmath",
+            "keywords": [
+                "component",
+                "pagination",
+                "ucsdmath"
+            ],
+            "time": "2016-08-21 00:00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kosinix/grafika": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,0 +1,63 @@
+/**
+ * This file is part of the UCSDMath package.
+ *
+ * (c) 2015-2016 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * Twig Template for: Pagination (Compact Pager)
+ *
+ * @file    view-pagination-compact-pager.twig
+ * @author  Daryl Eisner <deisner@math.ucsd.edu>
+ * @version 1.9.0
+ * @date    2016-08-21
+ * @note    This is part of the base set of templates for Decorator (v4.5.4)
+ *
+ * --------------------------------------------------------------------------
+ */
+{% if paginator.numPages > 1 %}
+    <div class="input-group" style="width: 1px;">
+        {% if paginator.prevUrl %}
+            <span class="input-group-btn">
+                <a href="{{ paginator.prevUrl }}" class="btn btn-default" type="button">&laquo; Prev</a>
+            </span>
+        {% endif %}
+        <select class="form-control paginator-select-page" style="width: auto; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none;">
+            {% for page in paginator.pages %}
+                {% if page.url %}
+                    <option value="{{ page.url }}"{{ page.isCurrent ? 'selected' : '' }}>
+                        Page {{ page.num }}
+                    </option>
+                {% else %}
+                    <option disabled>{{ page.num }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        {% if paginator.nextUrl %}
+            <span class="input-group-btn">
+                <a href="{{ paginator.nextUrl }}" class="btn btn-default" type="button">Next &raquo;</a>
+            </span>
+        {% endif %}
+    </div>
+{% endif %}
+{# Depends on this little bit of javascript being included somewhere:
+    $(function() {
+        $('.paginator-select-page').on('change', function() {
+            document.location = $(this).val();
+        });
+        // Workaround to prevent iOS from zooming the page when clicking the select list:
+        $('.paginator-select-page')
+            .on('focus', function() {
+                if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+                    $(this).css('font-size', '16px');
+                }
+            })
+            .on('blur', function() {
+                if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+                    $(this).css('font-size', '');
+                }
+            })
+        ;
+    });
+#}
