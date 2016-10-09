@@ -40,6 +40,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
+            'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
             'Slim\\Middleware\\' => 16,
             'Slim\\Csrf\\' => 10,
@@ -145,6 +146,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'Symfony\\Component\\Filesystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
+        ),
+        'Symfony\\Component\\Debug\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/debug',
         ),
         'Symfony\\Component\\Console\\' => 
         array (
