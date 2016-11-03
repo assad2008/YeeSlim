@@ -84,7 +84,7 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
      *
      * @api
      */
-    const VERSION = '1.9.0';
+    const VERSION = '1.10.0';
 
     //--------------------------------------------------------------------------
 
@@ -135,10 +135,10 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
             $html .= $this->getCompactPagingSelectController();
             $html .= $this->getCompactPagingNextUrl();
         } else {
-            $html .= sprintf('<span class="fl"><a class="btn btn-default no-pe" href="%s" tabindex="90" title="Select the previous page" type="button">%s</a></span>%s', '#', static::NAVIGATION_ARROW_PREV, "\n");
-            $html .= '<select class="form-control paging-select" tabindex="91" title="Jump to a selected page">';
+            $html .= sprintf('<span class="fl"><a class="btn btn-default no-pe" href="%s" tabindex="300" title="Select the previous page" type="button">%s</a></span>%s', '#', static::NAVIGATION_ARROW_PREV, "\n");
+            $html .= '<select class="form-control paging-select" tabindex="301" title="Jump to a selected page">';
             $html .= sprintf('%s    <option value="%s" %s>Page 1</option>%s</select>', "\n", str_replace(['"'], ['%22'], $this->getPageUrl(1)), 'selected="selected"', "\n", "\n");
-            $html .= sprintf('<span class="fl"><a class="btn btn-default no-pe" href="%s" tabindex="92" title="Select the next page" type="button">%s</a></span>%s', '#', static::NAVIGATION_ARROW_NEXT, "\n");
+            $html .= sprintf('<span class="fl"><a class="btn btn-default no-pe" href="%s" tabindex="302" title="Select the next page" type="button">%s</a></span>%s', '#', static::NAVIGATION_ARROW_NEXT, "\n");
         }
         /* comment: jQuery pagination in /sso/1/assets/js/vendor/ucsdmath-functions.min.js */
 
@@ -154,7 +154,7 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
      */
     protected function getCompactPagingSelectController(): string
     {
-        $html = sprintf('<select class="form-control paging-select" tabindex="91" title="Jump to a selected page">%s', "\n");
+        $html = sprintf('<select class="form-control paging-select" tabindex="301" title="Jump to a selected page">%s', "\n");
         foreach ($this->renderAsArray() as $render) {
             if ($render['pageUrl']) {
                 $html .= '    <option value="' . str_replace(['"'], ['%22'], $render['pageUrl']) . '"';
@@ -179,13 +179,13 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
     {
         return $this->getNextUrl()
             ? sprintf(
-                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="92" title="Select the next page" type="button">%s</a></span>%s',
+                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="302" title="Select the next page" type="button">%s</a></span>%s',
                 str_replace(['"'], ['%22'], $this->getNextUrl()),
                 static::NAVIGATION_ARROW_NEXT,
                 "\n"
             )
             : sprintf(
-                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="92" title="Select the next page" type="button">%s</a></span>%s',
+                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="302" title="Select the next page" type="button">%s</a></span>%s',
                 '#',
                 static::NAVIGATION_ARROW_NEXT,
                 "\n"
@@ -203,13 +203,13 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
     {
         return $this->getPrevUrl()
             ? sprintf(
-                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="90" title="Select the next page" type="button">%s</a></span>%s',
+                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="300" title="Select the next page" type="button">%s</a></span>%s',
                 str_replace(['"'], ['%22'], $this->getPrevUrl()),
                 static::NAVIGATION_ARROW_PREV,
                 "\n"
             )
             : sprintf(
-                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="90" title="Select the previous page" type="button">%s</a></span>%s',
+                '<span class="fl"><a class="btn btn-default" href="%s" tabindex="300" title="Select the previous page" type="button">%s</a></span>%s',
                 '#',
                 static::NAVIGATION_ARROW_PREV,
                 "\n"
@@ -232,9 +232,9 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
             : sprintf('%s<!-- paging controls -->%s<div class="%s">%s', "\n", "\n", 'paging-container-no-show-records', "\n");
         $html .= $containData;
         if ($this->isItemsPerPageUsed) {
-            $html .= '<button class="button secondary" id="button-pagination-show" name="button" type="button" tabindex="93" title="Show records per page" value="pagination-show">Show</button>' . "\n";
+            $html .= '<button class="button secondary" id="button-pagination-show" name="button" type="button" tabindex="303" title="Show records per page" value="pagination-show">Show</button>' . "\n";
             $html .= '<input class="input-paginator-items-per-page" id="paginator-items-per-page" name="paginator-items-per-page" type="text" maxlength="5" ';
-            $html .= sprintf('tabindex="94" title="Provide the number of records per page" value="%s">', $this->itemsPerPage);
+            $html .= sprintf('tabindex="304" title="Provide the number of records per page" value="%s">', $this->itemsPerPage);
         }
 
         return $html . "</div>\n<!-- /paging controls -->";

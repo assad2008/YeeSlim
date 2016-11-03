@@ -5,7 +5,7 @@
 build:
     environment:
         mysql: 5.7
-        php: 7.0.6
+        php: 7.0.8
 before_commands:
     - "composer install --dev --prefer-source"
 tools:
@@ -91,7 +91,7 @@ checks:
     javascript: true
     php:
         code_rating: true
-        duplication: true
+        duplication: false
         fix_doc_comments: false
         remove_php_closing_tag: false
         remove_extra_empty_lines: false

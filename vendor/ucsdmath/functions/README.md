@@ -5,14 +5,24 @@
     <td><h3>A Development Project in PHP</h3><p><strong>UCSDMath</strong> provides a testing framework for general internal Intranet software applications for the UCSD, Department of Mathematics. This is used for development and testing only. [not for production]</p>
 
 <table width="550"><tr><td width="120"><b>Travis CI</b></td><td width="250"><b>SensioLabs</b></td><td width="180"><b>Dependencies</b></td></tr><tr>
+
     <td width="120" align="center">
         <a href="https://travis-ci.org/ucsdmath/Functions">
         <img src="https://travis-ci.org/ucsdmath/Functions.svg?branch=master" style="float: left; margin: 0px 0px 10px 10px;"></a><br>
+
         <a href="https://www.codacy.com/app/ucsdmath-project/Functions">
-        <img src="https://api.codacy.com/project/badge/Grade/3b1affdfe98543f585222970a688f687"></a></td>
+        <img src="https://api.codacy.com/project/badge/Grade/3b1affdfe98543f585222970a688f687"></a><br>
+
+        <a href="https://scrutinizer-ci.com/g/ucsdmath/Functions/?branch=master">
+        <img src="https://img.shields.io/scrutinizer/g/ucsdmath/Functions.svg"></a>
+    </td>
+
     <td width="250" align="center">
         <a href="https://insight.sensiolabs.com/projects/62092d2f-16ed-43d7-b737-536760881155">
-        <img src="https://insight.sensiolabs.com/projects/62092d2f-16ed-43d7-b737-536760881155/big.png" style="float: right; margin: 0px 0px 10px 10px;" width="212" height="51"></a></td>
+        <img src="https://insight.sensiolabs.com/projects/62092d2f-16ed-43d7-b737-536760881155/big.png" style="float: right; margin: 0px 0px 10px 10px;" width="212" height="51"></a><br>
+
+        <a href="https://travis-ci.org/ucsdmath/Functions"><img src="https://img.shields.io/badge/PHP-%207.1%20Tested%20-33cc33.svg"></a>
+    </td>
     <td width="180" align="center">
         <a href="https://www.versioneye.com/user/projects/577fba3c5bb13900493de603">
         <img src="https://www.versioneye.com/user/projects/577fba3c5bb13900493de603/badge.png?style=flat" style="float:left;margin:0px 0px 10px 10px;"></a><br>

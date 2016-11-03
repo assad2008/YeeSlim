@@ -79,7 +79,7 @@ trait DepartmentExtendedFunctions
      */
     public function formatPhone(string $phone, string $format = '(###) ###-####'): string
     {
-        return $this->formatPhoneMask($this->stripNonNumeric($phone), strlen($phone), $format);
+        return $this->formatPhoneMask($this->stripNonNumeric($phone), strlen($this->stripNonNumeric($phone)), $format);
     }
 
     //--------------------------------------------------------------------------
@@ -95,12 +95,31 @@ trait DepartmentExtendedFunctions
      */
     protected function formatPhoneMask(string $phone, int $length, string $format): string
     {
+        $this->formatPhoneMultiMask($phone, $length, $format);
+
+        return preg_match('/^\(?([2-9]{1}\d{2})\)?[-.\s]?([2-9]{1}\d{2})[-.\s]?(\d{4})$/', $phone)
+            ? preg_replace('/([0-9]{3})([0-9]{3})([0-9]{4})/', '($1) $2-$3', $phone)
+            : $phone;
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Return the correct digit masking.
+     *
+     * @param string $phone  The phone number to format
+     * @param int    $length The $phone digit length
+     * @param string $format The format mask pattern
+     *
+     * @return string
+     */
+    protected function formatPhoneMultiMask(string $phone, int $length, string $format): string
+    {
         if (7 === $length && 1 === substr_count($format, '-')) {
             return preg_replace('/([0-9]{3})([0-9]{4})/', '$1-$2', $phone);
         } elseif (10 === $length) {
             return $this->formatPhoneTenDigitMask($phone, $format);
         }
-        return $phone;
     }
 
     //--------------------------------------------------------------------------

@@ -5,14 +5,24 @@
     <td><h3>A Development Project in PHP</h3><p><strong>UCSDMath</strong> provides a testing framework for general internal Intranet software applications for the UCSD, Department of Mathematics. This is used for development and testing only. [not for production]</p>
 
 <table width="550"><tr><td width="120"><b>Travis CI</b></td><td width="250"><b>SensioLabs</b></td><td width="180"><b>Dependencies</b></td></tr><tr>
+
     <td width="120" align="center">
         <a href="https://travis-ci.org/ucsdmath/Pagination">
         <img src="https://travis-ci.org/ucsdmath/Pagination.svg?branch=master" style="float: left; margin: 0px 0px 10px 10px;"></a><br>
+
         <a href="https://www.codacy.com/app/ucsdmath-project/Pagination">
-        <img src="https://api.codacy.com/project/badge/Grade/712cf72f522447e88528886b9d02448c"></a></td>
+        <img src="https://api.codacy.com/project/badge/Grade/712cf72f522447e88528886b9d02448c"></a><br>
+
+        <a href="https://scrutinizer-ci.com/g/ucsdmath/Pagination/?branch=master">
+        <img src="https://img.shields.io/scrutinizer/g/ucsdmath/Pagination.svg"></a>
+    </td>
+
     <td width="250" align="center">
         <a href="https://insight.sensiolabs.com/projects/4697add0-76b8-48d1-98bb-aa24eb472d5c">
-        <img src="https://insight.sensiolabs.com/projects/4697add0-76b8-48d1-98bb-aa24eb472d5c/big.png" style="float: right; margin: 0px 0px 10px 10px;" width="212" height="51"></a></td>
+        <img src="https://insight.sensiolabs.com/projects/4697add0-76b8-48d1-98bb-aa24eb472d5c/big.png" style="float: right; margin: 0px 0px 10px 10px;" width="212" height="51"></a><br>
+
+        <a href="https://travis-ci.org/ucsdmath/Pagination"><img src="https://img.shields.io/badge/PHP-%207.1%20Tested%20-33cc33.svg"></a>
+    </td>
     <td width="180" align="center">
         <a href="https://www.versioneye.com/user/projects/577fba905bb1390040177bcc">
         <img src="https://www.versioneye.com/user/projects/577fba905bb1390040177bcc/badge.png?style=flat" style="float:left;margin:0px 0px 10px 10px;"></a><br>
