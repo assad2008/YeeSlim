@@ -60,6 +60,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         ),
         'M' => 
         array (
+            'Moontoast\\Math\\' => 15,
             'Monolog\\' => 8,
             'Moment\\' => 7,
         ),
@@ -191,6 +192,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
+        'Moontoast\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -293,13 +298,6 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
             'Pdp\\' => 
             array (
                 0 => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/library',
-            ),
-        ),
-        'M' => 
-        array (
-            'Moontoast\\Math' => 
-            array (
-                0 => __DIR__ . '/..' . '/moontoast/math/src',
             ),
         ),
         'D' => 

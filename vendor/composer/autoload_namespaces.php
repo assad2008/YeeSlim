@@ -11,6 +11,5 @@ return array(
     'Purl' => array($vendorDir . '/jwage/purl/src'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'Pdp\\' => array($vendorDir . '/jeremykendall/php-domain-parser/library'),
-    'Moontoast\\Math' => array($vendorDir . '/moontoast/math/src'),
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
 );
