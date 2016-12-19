@@ -40,7 +40,6 @@ Table of Contents
 * [CURL](#curl)
 * [Shorten URL](#shorten-url)
 * [Get Alexa Rank](#ge-alexa-rank)
-* [Get Google PageRank](#get-google-pagerank)
 * [Get Tiny URL](#get-tiny-url)
 * [Get Keyword Suggestions From Google](#get-keyword-suggestions-from-google)
 * [WIKI Search](#wiki-search)
@@ -460,12 +459,7 @@ $AlexaRank = Recipe::getAlexaRank("github.com");
 echo $AlexaRank;
 // outputs: Current alexa ranking as position number (example: 52)
 ```
-###Get Google PageRank
-```php
-$GoogleRank = Recipe::getGooglePageRank("github.com");
-echo $GoogleRank;
-// outputs: Current google page ranking
-```
+
 ###Shorten URL
 ```php
 $TinyUrl = Recipe::getTinyUrl("https://github.com/ngfw/Recipe");

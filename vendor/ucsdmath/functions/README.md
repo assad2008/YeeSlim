@@ -29,13 +29,24 @@
         <a href="https://codeclimate.com/github/ucsdmath/Functions">
         <img src="https://codeclimate.com/github/ucsdmath/Functions/badges/gpa.svg"></a><br>
         <a href="https://travis-ci.org/ucsdmath/Functions">
-        <img src="http://php7ready.timesplinter.ch/ucsdmath/Functions/badge.svg"></a>
+        <img src="http://php7ready.timesplinter.ch/ucsdmath/Functions/badge.svg"></a><br>
+        <a href="https://codeship.com/">
+        <img src="https://app.codeship.com/projects/b362e5a0-98a5-0134-d366-422e888d6aa3/status?branch=master"></a>
 </td></tr></table></td></tr></table>
-<table width="880"><tr><td width="116" align="center"><b>Scrutinizer</b></td><td width="112" align="center"><b>Latest</b></td><td width="108" align="center"><b>PHP</b></td><td width="150" align="center"><b>Usage</b></td><td width="142" align="center"><b>Development</b></td><td width="142" align="center"><b>Code Quality</b></td><td width="110" align="center"><b>License</b></td></tr><tr>
+<table width="890"><tr>
+    <td width="116" align="center"><b>Scrutinizer</b></td>
+    <td width="122" align="center"><b>Latest</b></td>
+    <td width="108" align="center"><b>PHP</b></td>
+    <td width="150" align="center"><b>Usage</b></td>
+    <td width="142" align="center"><b>Development</b></td>
+    <td width="142" align="center"><b>Code Quality</b></td>
+    <td width="110" align="center"><b>License</b></td>
+</tr>
+<tr>
     <td valign="top" width="116" align="center">
         <a href="https://scrutinizer-ci.com/g/ucsdmath/Functions/build-status/master">
         <img src="https://scrutinizer-ci.com/g/ucsdmath/Functions/badges/build.png?b=master"></a></td>
-    <td valign="top" width="112" align="center">
+    <td valign="top" width="122" align="center">
         <a href="https://packagist.org/packages/ucsdmath/Functions">
         <img src="https://poser.pugx.org/ucsdmath/Functions/v/stable"></a></td>
     <td valign="top" width="108" align="center">

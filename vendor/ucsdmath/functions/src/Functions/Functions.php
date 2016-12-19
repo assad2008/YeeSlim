@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2016 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -36,7 +36,7 @@ class Functions extends AbstractFunctions implements FunctionsInterface
      *
      * @api
      */
-    const VERSION = '1.10.0';
+    const VERSION = '1.11.0';
 
     //--------------------------------------------------------------------------
 

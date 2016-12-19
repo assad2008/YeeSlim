@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <ruleset name="PSR2 Modifications">
-    <description>The PSR2 standard, but warnings with line lengths over 160 chars.</description>
+    <description>The PSR2 standard, but warnings with line lengths over 230 chars.</description>
     <author>Daryl Eisner</author>
     <email>deisner@ucsd.edu</email>
 
     <!-- Include the whole PSR2 standard -->
     <rule ref="PSR2"/>
 
-    <!-- Lines can be no longer than 160 chars -->
+    <!-- Lines can be no longer than 230 chars -->
     <rule ref="Generic.Files.LineLength">
         <properties>
             <property name="lineLimit" value="230"/>

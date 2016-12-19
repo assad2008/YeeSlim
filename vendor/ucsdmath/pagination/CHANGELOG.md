@@ -1,114 +1,229 @@
 ## CHANGELOG
 ============
 
-All notable changes to `UCSDMath\Pagination` (bug and security fixes) will
-be documented in this file.
+All notable changes to `UCSDMath\Pagination` (bug, security fixes, and component
+updates) will be documented in this file.
+
+### 1.11.0 (2016-12-02)
+
+ - Update to `npm` (v4.0.2)
+ - Update to `Moment` [(2.15.2)
+ - Update to `Node.js` (v7.2.0)
+ - Update to `Lodash` (v4.17.2)
+ - Update to `Composer` (v1.2.3)
+ - Update to `Babel.js` (v6.19.0)
+ - Update to `React.js` (v15.4.1)
+ - Update to `WordPress` (v4.6.1)
+ - Update to `Font-Awesome` (v4.7.0)
+ - Update to `ucsdmath/ucsdmath-js` (v1.11.0)
+ - Update to PHP Component: `league/csv` (v8.1.2)
+ - Update to PHP Component: `twig/twig` (v1.28.2)
+ - Update to PHP Component: `symfony/yaml` (v3.2.0)
+ - Update to PHP Component: `symfony/finder` (v3.2.0)
+ - Update to PHP Component: `symfony/routing` (v3.2.0)
+ - Update to PHP Component: `symfony/validator` (v3.2.0)
+ - Update to PHP Component: `symfony/filesystem` (v3.2.0)
+ - Update to PHP Component: `symfony/serializer` (v3.2.0)
+ - Update to PHP Component: `symfony/http-kernel` (v3.2.0)
+ - Update to PHP Component: `symfony/http-foundation` (v3.2.0)
+ - Update to PHP Component: `symfony/event-dispatcher` (v3.2.0)
+ - Update to PHP Component: `symfony/framework-bundle` (v3.2.0)
+ - Update to PHP Component: `doctrine/cache` (v1.6.1)
+ - Update to PHP Component: `hashids/hashids` (v2.0.0)
+ - Update to PHP Component: `phpunit/phpunit` (v5.7.1)
+ - Update to PHP Component: `twig/extensions` (v1.4.1)
+ - Update to PHP Component: `respect/validation` (v1.1.10)
+ - Added new PHP Component: `doctrine/common` (v2.7.0)
+ - Added new PHP Component: `symfony/process` (v3.2.0)
+ - Added new PHP Component: `hellogerard/jobby` (v3.2.1)
+ - Added new PHP Component: `doctrine/annotations` (v1.3.0)
+ - Added new PHP Component: `jeremeamia/SuperClosure` (v2.2.0)
+ - Added new PHP Component: `mtdowling/cron-expression` (v1.1.0)
+ - Added new PHP 7.x checks through Codeship CI (current status: green/passing)
+ - Added multiple 'index.php' files in order to prevent index browsing under mis-configuration issues with Apache.
+ - Initial Release of new repository: `UCSDMath/Barcode` (v1.11.0)
+ - Convert MySQL tables to full Unicode support - converted from 'utf8' to 'utf8mb4/utf8mb4_unicode_ci'.
+
+    Split repository `ucsdmath/ucsdmath-js` into smaller components on Github:
+    - Added new Javascript repository (Github): `ucsdmath/html-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/mail-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/logger-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/testing-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/workshop-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/functions-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/encryption-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/validation-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/ajax-manager-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/form-manager-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/configuration-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/serialization-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/date-component-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/image-component-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/template-factory-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/contact-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/database-component-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/maillist-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/omnilock-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/quickdex-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/dependency-injection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/inventory-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/personnel-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/pragmatic-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/punchcard-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/persistence-component-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/officehours-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/simple-voter-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/taassignments-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/cron-scheduler-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/course-petitions-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/faculty-profiles-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/faculty-salaries-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/appointment-diary-collection-js` (v1.11.0)
+    - Added new Javascript repository (Github): `ucsdmath/system-user-settings-collection-js` (v1.11.0)
+
+    Published new packages: https://www.npmjs.com/~ucsdmath
+    - Published new Javascript package (npm): `ucsdmath/html-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/mail-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/logger-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/testing-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/ucsdmath-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/workshop-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/functions-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/encryption-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/validation-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/ajax-manager-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/form-manager-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/configuration-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/serialization-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/date-component-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/image-component-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/template-factory-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/contact-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/database-component-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/maillist-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/omnilock-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/quickdex-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/dependency-injection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/inventory-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/personnel-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/pragmatic-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/punchcard-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/persistence-component-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/officehours-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/simple-voter-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/taassignments-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/cron-scheduler-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/course-petitions-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/faculty-profiles-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/faculty-salaries-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/appointment-diary-collection-js` (v1.11.0)
+    - Published new Javascript package (npm): `ucsdmath/system-user-settings-collection-js` (v1.11.0)
 
 ### 1.10.0 (2016-10-20)
 
- - Update to jQuery (v3.1.1)
- - Update to Symfony (v3.1.5)
- - Update to Hashids (v1.1.1)
- - Update to Moment (v2.15.1)
- - Update to Phpunit (v5.6.1)
- - Update to TinyMCE (v4.4.3)
- - Update to RequireJS (2.3.2)
- - Update to Monolog (v1.21.0)
- - Update to jQuery-UI (v1.12.1)
- - Update to twig/twig (v1.26.1)
- - Update to league/csv (v8.1.1)
- - Update to doctrine/dbal (v2.5.5)
- - Update to league/flysystem (v1.0.32)
- - Update to respect/validation (v1.1.9)
- - Added new library: Lodash (v4.16.4)
- - Added new library: sprintf.js (v1.0.3)
- - Update to phpseclib/phpseclib (v2.0.4)
- - Update to jQuery-Circle-Progress (v1.2.0)
- - Update to league/flysystem-sftp (v1.0.12)
- - Update to tablesorter jQuery plugin (v2.27.8)
+ - Update to `jQuery` (v3.1.1)
+ - Update to `Symfony` (v3.1.5)
+ - Update to `Hashids` (v1.1.1)
+ - Update to `Moment` (v2.15.1)
+ - Update to `TinyMCE` (v4.4.3)
+ - Update to `RequireJS` (2.3.2)
+ - Update to `jQuery-UI` (v1.12.1)
+ - Update to `twig/twig` (v1.26.1)
+ - Update to `league/csv` (v8.1.1)
+ - Update to `doctrine/dbal` (v2.5.5)
+ - Update to `phpunit/phpunit` (v5.6.1)
+ - Update to `monolog/monolog` (v1.21.0)
+ - Update to `league/flysystem` (v1.0.32)
+ - Update to `respect/validation` (v1.1.9)
+ - Added new library: `Lodash` (v4.16.4)
+ - Added new library: `sprintf.js` (v1.0.3)
+ - Update to `phpseclib/phpseclib` (v2.0.4)
+ - Update to `jQuery-Circle-Progress` (v1.2.0)
+ - Update to `league/flysystem-sftp` (v1.0.12)
+ - Update to `tablesorter` jQuery plugin (v2.27.8)
  - Update CSS framework (ucsdmath-main.min.css)
  - Update JS framework (ucsdmath-framework.min.js)
  - Added PHP 7.1 checks through Travis CI - everything passing/in-green
  - Fixed many bugs/security on: Scrutinizer CI, Travis CI, Code Climate, SensioLabsInsight, and Codacy.
  - Adding new JavaScript repository: ucsdmath-js (43 new functions, 32 classes)
-     Project ECMAScript 6 Class Additions:
-       (*) AjaxManager
-       (*) AppointmentDiaryCollection
-       (*) Configuration
-       (*) ContactCollection
-       (*) CoursePetitionsCollection
-       (*) CronSchedulerCollection
-       (*) Database
-       (*) Date
-       (*) DependencyInjection
-       (*) Encryption
-       (*) FacultyProfilesCollection
-       (*) FacultySalariesCollection
-       (*) FormManager
-       (*) Functions
-       (*) Image
-       (*) InventoryCollection
-       (*) Logger
-       (*) Mail
-       (*) MaillistCollection
-       (*) OfficeHoursCollection
-       (*) OmnilockCollection
-       (*) PersonnelCollection
-       (*) PragmaticCollection
-       (*) PunchcardCollection
-       (*) QuickDexCollection
-       (*) Serialization
-       (*) SimpleVoterCollection
-       (*) SystemUserSettingsCollection
-       (*) TaAssignmentsCollection
-       (*) TemplateFactory
-       (*) Testing
-       (*) Validation
-     Project Class Methods added:
-       (+) {string} sprintf();
-       (+) {string} getUuid4();
-       (+) {string} getVersion();
-       (+) {string} showType(mixed obj);
-       (+) {string} getClassName(object obj);
-       (+) {string} left(string str, int n);
-       (+) {string} right(string str, int n);
-       (+) {Array}  array_values(string list);
-       (+) {string} sanitizePersonalName(string name);
-       (+) {Array}  array_merge(array one, array two, ...);
-       (+) {bool}   array_key_exists(string key, array list);
-       (+) {string} formatOmnilockFirstname(string lastname);
-       (+) {string} rightPad(string str, string char, int n);
-       (+) {string} leftPad(string str, string char, int n);
-       (+) {bool}   in_array(needle, haystack, paramStrict = false);
-       (+) {Array}  explode(string delimiter, string input, int limit);
-       (+) {string} formatAid(string aid, string format = '#########');
-       (+) {string} formatEid(string eid, string format = '#########');
-       (+) {string} formatPid(string pid, string format = 'A########');
-       (+) {string} formatOmnilockCredentialRecord(array credentialData);
-       (+) {string} formatPhone(string phone, string mask = '(###) ###-####');
-       (+) {string} formatOmnilockLastnameGroup(string primaryGroup, string lastname);
-       (+) {Array}  array_keys(array array, string searchValue = null, bool paramStrict = false);
-       (+) {string} formatOmnilockCredentialNumber(string primaryGroup, string eid, string pid, string aid);
-     Project Functions added (in Workshop):
-       (+) {string} showType(mixed obj);
-       (+) {Array}  isValidHex(string data);
-       (+) {bool}   isNumeric(mixed number);
-       (+) {bool}   isValidMd5(string hash);
-       (+) {string} textReverse(string str);
-       (+) {bool}   isValidMathId(string id);
-       (+) {bool}   isValidSHA1(string hash);
-       (+) {bool}   isValidUuid(string uuid);
-       (+) {bool}   isValidYear(string year);
-       (+) {bool}   isValidUuid4(string uuid);
-       (+) {bool}   isValidSHA512(string hash);
-       (+) {bool}   isValidURL(string address);
-       (+) {Array}  isValidBase64(string data);
-       (+) {bool}   isValidZipcode(string data);
-       (+) {Array}  hasHtmlCode(string htmlData);
-       (+) {Array}  isValidEmail(string address);
-       (+) {bool}   isValidIpAddress(string address);
-       (+) {bool}   isValidMacAddress(string address);
-       (+) {Array}  arrayPush(array array, array values);
+    Project ECMAScript 6 Class Additions:
+    - `ucsdmath/AjaxManager`
+    - `ucsdmath/AppointmentDiaryCollection`
+    - `ucsdmath/Configuration`
+    - `ucsdmath/ContactCollection`
+    - `ucsdmath/CoursePetitionsCollection`
+    - `ucsdmath/CronSchedulerCollection`
+    - `ucsdmath/Database`
+    - `ucsdmath/Date`
+    - `ucsdmath/DependencyInjection`
+    - `ucsdmath/Encryption`
+    - `ucsdmath/FacultyProfilesCollection`
+    - `ucsdmath/FacultySalariesCollection`
+    - `ucsdmath/FormManager`
+    - `ucsdmath/Functions`
+    - `ucsdmath/Image`
+    - `ucsdmath/InventoryCollection`
+    - `ucsdmath/Logger`
+    - `ucsdmath/Mail`
+    - `ucsdmath/MaillistCollection`
+    - `ucsdmath/OfficeHoursCollection`
+    - `ucsdmath/OmnilockCollection`
+    - `ucsdmath/PersonnelCollection`
+    - `ucsdmath/PragmaticCollection`
+    - `ucsdmath/PunchcardCollection`
+    - `ucsdmath/QuickDexCollection`
+    - `ucsdmath/Serialization`
+    - `ucsdmath/SimpleVoterCollection`
+    - `ucsdmath/SystemUserSettingsCollection`
+    - `ucsdmath/TaAssignmentsCollection`
+    - `ucsdmath/TemplateFactory`
+    - `ucsdmath/Testing`
+    - `ucsdmath/Validation`
+    Project Class Methods added:
+    - {string} sprintf();
+    - {string} getUuid4();
+    - {string} getVersion();
+    - {string} showType(mixed obj);
+    - {string} getClassName(object obj);
+    - {string} left(string str, int n);
+    - {string} right(string str, int n);
+    - {Array}  array_values(string list);
+    - {string} sanitizePersonalName(string name);
+    - {Array}  array_merge(array one, array two, ...);
+    - {bool}   array_key_exists(string key, array list);
+    - {string} formatOmnilockFirstname(string lastname);
+    - {string} rightPad(string str, string char, int n);
+    - {string} leftPad(string str, string char, int n);
+    - {bool}   in_array(needle, haystack, paramStrict = false);
+    - {Array}  explode(string delimiter, string input, int limit);
+    - {string} formatAid(string aid, string format = '#########');
+    - {string} formatEid(string eid, string format = '#########');
+    - {string} formatPid(string pid, string format = 'A########');
+    - {string} formatOmnilockCredentialRecord(array credentialData);
+    - {string} formatPhone(string phone, string mask = '(###) ###-####');
+    - {string} formatOmnilockLastnameGroup(string primaryGroup, string lastname);
+    - {Array}  array_keys(array array, string searchValue = null, bool paramStrict = false);
+    - {string} formatOmnilockCredentialNumber(string primaryGroup, string eid, string pid, string aid);
+    Project Functions added (in Workshop):
+    - {string} showType(mixed obj);
+    - {Array}  isValidHex(string data);
+    - {bool}   isNumeric(mixed number);
+    - {bool}   isValidMd5(string hash);
+    - {string} textReverse(string str);
+    - {bool}   isValidMathId(string id);
+    - {bool}   isValidSHA1(string hash);
+    - {bool}   isValidUuid(string uuid);
+    - {bool}   isValidYear(string year);
+    - {bool}   isValidUuid4(string uuid);
+    - {bool}   isValidSHA512(string hash);
+    - {bool}   isValidURL(string address);
+    - {Array}  isValidBase64(string data);
+    - {bool}   isValidZipcode(string data);
+    - {Array}  hasHtmlCode(string htmlData);
+    - {Array}  isValidEmail(string address);
+    - {bool}   isValidIpAddress(string address);
+    - {bool}   isValidMacAddress(string address);
+    - {Array}  arrayPush(array array, array values);
 
 ### 1.9.0 (2016-08-21)
 
