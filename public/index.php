@@ -15,11 +15,9 @@ define("ROUTERDIR",SRCDIR . "routers" . DS);
 
 error_reporting(E_ALL ^ E_NOTICE);
 
-if(file_exists(VENDORDIR . "autoload.php"))
-{
+if(file_exists(VENDORDIR . "autoload.php")){
 	require(VENDORDIR . 'autoload.php');
-}else
-{
+}else{
 	die("<pre>Run 'composer.phar install' in root dir</pre>");
 }
 
