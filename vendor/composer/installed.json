@@ -597,51 +597,6 @@
         ]
     },
     {
-        "name": "nikic/fast-route",
-        "version": "v1.0.1",
-        "version_normalized": "1.0.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nikic/FastRoute.git",
-            "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nikic/FastRoute/zipball/8ea928195fa9b907f0d6e48312d323c1a13cc2af",
-            "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4.0"
-        },
-        "time": "2016-06-12 19:08:51",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "FastRoute\\": "src/"
-            },
-            "files": [
-                "src/functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Nikita Popov",
-                "email": "nikic@php.net"
-            }
-        ],
-        "description": "Fast request router for PHP",
-        "keywords": [
-            "router",
-            "routing"
-        ]
-    },
-    {
         "name": "ua-parser/uap-php",
         "version": "v3.4.6",
         "version_normalized": "3.4.6.0",
@@ -1847,71 +1802,6 @@
         ]
     },
     {
-        "name": "fightbulc/moment",
-        "version": "1.25.1",
-        "version_normalized": "1.25.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/fightbulc/moment.php.git",
-            "reference": "5d03aacf18f423895f96dce9e4a2db281c4154a4"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/5d03aacf18f423895f96dce9e4a2db281c4154a4",
-            "reference": "5d03aacf18f423895f96dce9e4a2db281c4154a4",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "4.2.*"
-        },
-        "time": "2016-12-05 09:33:57",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Moment\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Ashish Tilara",
-                "email": "ashish@itcutives.com",
-                "role": "developer"
-            },
-            {
-                "name": "Jaroslaw Kozak",
-                "email": "jaroslaw.kozak68@gmail.com",
-                "role": "developer"
-            },
-            {
-                "name": "Tino Ehrich",
-                "email": "tino@bigpun.me",
-                "role": "developer"
-            }
-        ],
-        "description": "Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
-        "keywords": [
-            "date",
-            "display",
-            "format",
-            "i18n",
-            "locale",
-            "manipulate",
-            "moment",
-            "parse",
-            "time",
-            "translation",
-            "validate"
-        ]
-    },
-    {
         "name": "tuupola/slim-basic-auth",
         "version": "2.2.1",
         "version_normalized": "2.2.1.0",
@@ -2091,127 +1981,6 @@
         ],
         "description": "Symfony Translation Component",
         "homepage": "https://symfony.com"
-    },
-    {
-        "name": "ucsdmath/functions",
-        "version": "1.11.0",
-        "version_normalized": "1.11.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ucsdmath/Functions.git",
-            "reference": "0b4521b2d12c39a02a8e50ed794d9aa8c463d9ff"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ucsdmath/Functions/zipball/0b4521b2d12c39a02a8e50ed794d9aa8c463d9ff",
-            "reference": "0b4521b2d12c39a02a8e50ed794d9aa8c463d9ff",
-            "shasum": ""
-        },
-        "require": {
-            "nesbot/carbon": "1.21.0",
-            "php": ">=7.0"
-        },
-        "require-dev": {
-            "fzaninotto/faker": "1.6.0",
-            "mockery/mockery": "0.9.6",
-            "phpunit/phpunit": "5.7.1",
-            "squizlabs/php_codesniffer": "2.7.1",
-            "ucsdmath/testing": "1.11.0"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes."
-        },
-        "time": "2016-12-02 00:00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.11-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "UCSDMath\\Functions\\": "src/Functions/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Daryl Eisner",
-                "email": "deisner@ucsd.edu"
-            }
-        ],
-        "description": "A supporting set of commonly used functions.",
-        "homepage": "https://github.com/ucsdmath",
-        "keywords": [
-            "component",
-            "functions",
-            "ucsdmath"
-        ]
-    },
-    {
-        "name": "ucsdmath/pagination",
-        "version": "1.11.0",
-        "version_normalized": "1.11.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/ucsdmath/Pagination.git",
-            "reference": "8679a8255a9344dcd068b188960a89f5d9234769"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/ucsdmath/Pagination/zipball/8679a8255a9344dcd068b188960a89f5d9234769",
-            "reference": "8679a8255a9344dcd068b188960a89f5d9234769",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=7.0",
-            "ucsdmath/functions": "1.11.0"
-        },
-        "require-dev": {
-            "fzaninotto/faker": "1.6.0",
-            "mockery/mockery": "0.9.6",
-            "phpunit/phpunit": "5.7.1",
-            "squizlabs/php_codesniffer": "2.7.1",
-            "ucsdmath/testing": "1.11.0"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes"
-        },
-        "time": "2016-12-02 00:00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.11-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "UCSDMath\\Pagination\\": "src/Pagination/",
-                "UCSDMath\\Pagination\\Exception\\": "src/Pagination/Exception/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Daryl Eisner",
-                "email": "deisner@ucsd.edu"
-            }
-        ],
-        "description": "Simple pagination routines.",
-        "homepage": "https://github.com/ucsdmath",
-        "keywords": [
-            "component",
-            "pagination",
-            "ucsdmath"
-        ]
     },
     {
         "name": "ngfw/recipe",
@@ -2610,68 +2379,6 @@
         ]
     },
     {
-        "name": "phpmailer/phpmailer",
-        "version": "v5.2.18",
-        "version_normalized": "5.2.18.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/PHPMailer/PHPMailer.git",
-            "reference": "ed4e7ce8ad877a8f578139c491c256ab1933c7c9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/ed4e7ce8ad877a8f578139c491c256ab1933c7c9",
-            "reference": "ed4e7ce8ad877a8f578139c491c256ab1933c7c9",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.0.0"
-        },
-        "require-dev": {
-            "phpdocumentor/phpdocumentor": "*",
-            "phpunit/phpunit": "4.7.*"
-        },
-        "suggest": {
-            "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
-        },
-        "time": "2016-12-24 15:43:41",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "class.phpmailer.php",
-                "class.phpmaileroauth.php",
-                "class.phpmaileroauthgoogle.php",
-                "class.smtp.php",
-                "class.pop3.php",
-                "extras/EasyPeasyICS.php",
-                "extras/ntlm_sasl_client.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPL-2.1"
-        ],
-        "authors": [
-            {
-                "name": "Jim Jagielski",
-                "email": "jimjag@gmail.com"
-            },
-            {
-                "name": "Marcus Bointon",
-                "email": "phpmailer@synchromedia.co.uk"
-            },
-            {
-                "name": "Andy Prevost",
-                "email": "codeworxtech@users.sourceforge.net"
-            },
-            {
-                "name": "Brent R. Matzelle"
-            }
-        ],
-        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
-    },
-    {
         "name": "react/promise",
         "version": "v2.5.0",
         "version_normalized": "2.5.0.0",
@@ -2714,6 +2421,299 @@
         "keywords": [
             "promise",
             "promises"
+        ]
+    },
+    {
+        "name": "nikic/fast-route",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nikic/FastRoute.git",
+            "reference": "f3dcf5130e634b6123d40727d612ec6aa4f61fb3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nikic/FastRoute/zipball/f3dcf5130e634b6123d40727d612ec6aa4f61fb3",
+            "reference": "f3dcf5130e634b6123d40727d612ec6aa4f61fb3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2016-10-20 17:36:47",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "FastRoute\\": "src/"
+            },
+            "files": [
+                "src/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Nikita Popov",
+                "email": "nikic@php.net"
+            }
+        ],
+        "description": "Fast request router for PHP",
+        "keywords": [
+            "router",
+            "routing"
+        ]
+    },
+    {
+        "name": "phpmailer/phpmailer",
+        "version": "v5.2.22",
+        "version_normalized": "5.2.22.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/PHPMailer/PHPMailer.git",
+            "reference": "b18cb98131bd83103ccb26a888fdfe3177b8a663"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/b18cb98131bd83103ccb26a888fdfe3177b8a663",
+            "reference": "b18cb98131bd83103ccb26a888fdfe3177b8a663",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.0.0"
+        },
+        "require-dev": {
+            "phpdocumentor/phpdocumentor": "*",
+            "phpunit/phpunit": "4.7.*"
+        },
+        "suggest": {
+            "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
+        },
+        "time": "2017-01-09 09:33:47",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "class.phpmailer.php",
+                "class.phpmaileroauth.php",
+                "class.phpmaileroauthgoogle.php",
+                "class.smtp.php",
+                "class.pop3.php",
+                "extras/EasyPeasyICS.php",
+                "extras/ntlm_sasl_client.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "Jim Jagielski",
+                "email": "jimjag@gmail.com"
+            },
+            {
+                "name": "Marcus Bointon",
+                "email": "phpmailer@synchromedia.co.uk"
+            },
+            {
+                "name": "Andy Prevost",
+                "email": "codeworxtech@users.sourceforge.net"
+            },
+            {
+                "name": "Brent R. Matzelle"
+            }
+        ],
+        "description": "PHPMailer is a full-featured email creation and transfer class for PHP"
+    },
+    {
+        "name": "fightbulc/moment",
+        "version": "1.26.0",
+        "version_normalized": "1.26.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fightbulc/moment.php.git",
+            "reference": "d1f53279876f017724a598b9c95edd1e10ec5828"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/d1f53279876f017724a598b9c95edd1e10ec5828",
+            "reference": "d1f53279876f017724a598b9c95edd1e10ec5828",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.2.*"
+        },
+        "time": "2017-01-10 06:47:25",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Moment\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ashish Tilara",
+                "email": "ashish@itcutives.com",
+                "role": "developer"
+            },
+            {
+                "name": "Jaroslaw Kozak",
+                "email": "jaroslaw.kozak68@gmail.com",
+                "role": "developer"
+            },
+            {
+                "name": "Tino Ehrich",
+                "email": "tino@bigpun.me",
+                "role": "developer"
+            }
+        ],
+        "description": "Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
+        "keywords": [
+            "date",
+            "display",
+            "format",
+            "i18n",
+            "locale",
+            "manipulate",
+            "moment",
+            "parse",
+            "time",
+            "translation",
+            "validate"
+        ]
+    },
+    {
+        "name": "ucsdmath/functions",
+        "version": "1.12.0",
+        "version_normalized": "1.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ucsdmath/Functions.git",
+            "reference": "af606a833d87058a9a1416dc453e188d09a76a55"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ucsdmath/Functions/zipball/af606a833d87058a9a1416dc453e188d09a76a55",
+            "reference": "af606a833d87058a9a1416dc453e188d09a76a55",
+            "shasum": ""
+        },
+        "require": {
+            "nesbot/carbon": "1.21.0",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "fzaninotto/faker": "1.6.0",
+            "mockery/mockery": "0.9.7",
+            "phpunit/phpunit": "5.7.5",
+            "squizlabs/php_codesniffer": "2.7.1",
+            "ucsdmath/testing": "1.12.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes."
+        },
+        "time": "2017-01-02 00:00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.12-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "UCSDMath\\Functions\\": "src/Functions/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daryl Eisner",
+                "email": "deisner@ucsd.edu"
+            }
+        ],
+        "description": "A supporting set of commonly used functions.",
+        "homepage": "https://github.com/ucsdmath",
+        "keywords": [
+            "component",
+            "functions",
+            "ucsdmath"
+        ]
+    },
+    {
+        "name": "ucsdmath/pagination",
+        "version": "1.12.0",
+        "version_normalized": "1.12.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ucsdmath/Pagination.git",
+            "reference": "51f22e3b09769f38e56036424a4f64956a60f403"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ucsdmath/Pagination/zipball/51f22e3b09769f38e56036424a4f64956a60f403",
+            "reference": "51f22e3b09769f38e56036424a4f64956a60f403",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.0",
+            "ucsdmath/functions": "1.12.0"
+        },
+        "require-dev": {
+            "fzaninotto/faker": "1.6.0",
+            "mockery/mockery": "0.9.7",
+            "phpunit/phpunit": "5.7.5",
+            "squizlabs/php_codesniffer": "2.7.1",
+            "ucsdmath/testing": "1.12.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "Symfony DependencyInjection Component for fast loading of classes"
+        },
+        "time": "2017-01-02 00:00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.12-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "UCSDMath\\Pagination\\": "src/Pagination/",
+                "UCSDMath\\Pagination\\Exception\\": "src/Pagination/Exception/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daryl Eisner",
+                "email": "deisner@ucsd.edu"
+            }
+        ],
+        "description": "Simple pagination routines.",
+        "homepage": "https://github.com/ucsdmath",
+        "keywords": [
+            "component",
+            "pagination",
+            "ucsdmath"
         ]
     }
 ]

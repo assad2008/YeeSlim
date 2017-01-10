@@ -638,7 +638,7 @@ trait ValidityFunctions
     /**
      * Return a current MySQL timestamp.
      *
-     * @return string The MySQL datetime (e.g., 2016-12-02 07:09:00)
+     * @return string The MySQL datetime (e.g., 2017-01-02 07:09:00)
      */
     public function getMySQLTimestamp(): string
     {

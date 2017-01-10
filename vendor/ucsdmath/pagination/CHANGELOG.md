@@ -4,6 +4,69 @@
 All notable changes to `UCSDMath\Pagination` (bug, security fixes, and component
 updates) will be documented in this file.
 
+### 1.12.0 (2017-01-02)
+
+ - Update to `npm` [(v4.0.5)] [1]
+ - Update to `Moment` [(2.17.1)] [2]
+ - Update to `Node.js` [(v7.3.0)] [3]
+ - Update to `Lodash` [(v4.17.4)] [4]
+ - Update to `Composer` [(v1.3.0)] [5]
+ - Update to `WordPress` [(v4.7.0)] [6]
+ - Update to `CountUp.js` [(v1.8.1)] [7]
+ - Update to `tablesorter` jQuery plugin [(v2.28.3)] [8]
+ - Update to PHP Component: `mpdf/mpdf` (v6.1.3) [9]
+ - Update to PHP Component: `twig/twig` [(v1.30.0)] [10]
+ - Update to PHP Component: `symfony/yaml` [(v3.2.1)] [11]
+ - Update to PHP Component: `symfony/finder` [(v3.2.1)] [12]
+ - Update to PHP Component: `symfony/routing` [(v3.2.1)] [13]
+ - Update to PHP Component: `symfony/process` [(v3.2.1)] [14]
+ - Update to PHP Component: `phpunit/phpunit` [(v5.7.5)] [15]
+ - Update to PHP Component: `symfony/validator` [(v3.2.1)] [16]
+ - Update to PHP Component: `symfony/filesystem` [(v3.2.1)] [17]
+ - Update to PHP Component: `symfony/serializer` [(v3.2.1)] [18]
+ - Update to PHP Component: `symfony/http-kernel` [(v3.2.1)] [19]
+ - Update to PHP Component: `symfony/http-foundation` [(v3.2.1)] [20]
+ - Update to PHP Component: `symfony/event-dispatcher` [(v3.2.1)] [21]
+ - Update to PHP Component: `symfony/framework-bundle` [(v3.2.1)] [22]
+ - Update to PHP Component: `swiftmailer/swiftmailer` [(v5.4.5)] [23]
+ - Update to PHP Component: league/flysystem-sftp (v1.0.13) [24]
+ - Update to PHP Component: `mockery/mockery` [(v0.9.7)] [25]
+ - Update to PHP Component: `hashids/hashids` [(v2.0.3)] [26]
+ - Added `Backbone.js` [(v1.3.3)] [27]
+ - Removed PHP Component: `doctrine/common` [(v2.7.1)] [28]
+ - Added `Snowstorm` javascript theme and snowman png to panel. [(v1.44.20131208)] [29]
+ - Notes: All database tables converted to DEFAULT CHARSET=utf8mb4, COLLATE=utf8mb4_unicode_520_ci
+
+[1]: https://www.npmjs.com
+[2]: http://momentjs.com
+[3]: https://nodejs.org/en/
+[4]: https://lodash.com
+[5]: https://getcomposer.org
+[6]: https://wordpress.org
+[7]: http://inorganik.github.io/countUp.js/
+[8]: https://mottie.github.io/tablesorter/docs/
+[9]: https://mpdf.github.io
+[10]: https://packagist.org/packages/twig/twig
+[11]: https://packagist.org/packages/symfony/yaml
+[12]: https://packagist.org/packages/symfony/finder
+[13]: https://packagist.org/packages/symfony/routing
+[14]: https://packagist.org/packages/symfony/process
+[15]: https://packagist.org/packages/phpunit/phpunit
+[16]: https://packagist.org/packages/symfony/validator
+[17]: https://packagist.org/packages/symfony/filesystem
+[18]: https://packagist.org/packages/symfony/serializer
+[19]: https://packagist.org/packages/symfony/http-kernel
+[20]: https://packagist.org/packages/symfony/http-foundation
+[21]: https://packagist.org/packages/symfony/event-dispatcher
+[22]: https://packagist.org/packages/symfony/framework-bundle
+[23]: http://swiftmailer.org
+[24]: https://packagist.org/packages/league/flysystem-sftp
+[25]: https://packagist.org/packages/mockery/mockery
+[26]: https://packagist.org/packages/hashids/hashids
+[27]: http://backbonejs.org
+[28]: http://www.doctrine-project.org
+[29]: https://github.com/scottschiller/snowstorm/
+
 ### 1.11.0 (2016-12-02)
 
  - Update to `npm` (v4.0.2)
