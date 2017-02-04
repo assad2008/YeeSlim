@@ -1,7 +1,7 @@
 # Recipe :book:
 ####Collection of PHP Functions
 
-![](https://travis-ci.org/ngfw/Recipe.svg?branch=master) ![](https://img.shields.io/packagist/v/ngfw/recipe.svg?maxAge=259120) ![](https://img.shields.io/badge/code-awesome-brightgreen.svg?maxAge=2592100) ![](https://img.shields.io/badge/language-PHP-blue.svg?maxAge=2592000)
+![](https://travis-ci.org/ngfw/Recipe.svg?branch=master) ![](https://img.shields.io/packagist/v/ngfw/recipe.svg?maxAge=259120) ![](https://img.shields.io/badge/code-awesome-brightgreen.svg?maxAge=2592100) ![](https://img.shields.io/badge/language-PHP-blue.svg?maxAge=2592000) [![StyleCI](https://styleci.io/repos/65232201/shield?branch=master)](https://styleci.io/repos/65232201)
 
 ---
 Table of Contents
@@ -163,7 +163,7 @@ $Gravatar = Recipe::getGravatar(
         "class" => "Gravatar"
     )
 );
-ehco $Gravatar;
+echo $Gravatar;
 //Outputs: <img src="http://www.gravatar.com/avatar.php?gravatar_id=9d9d478c3b65d4046a84cf84b4c8bf46&default=monsterid&size=200&rating=x" width="200px" height="200px" class="Gravatar" />'
 ```
 ![NG Gravatar](http://www.gravatar.com/avatar.php?gravatar_id=9d9d478c3b65d4046a84cf84b4c8bf46&default=monsterid&size=200&rating=x)
