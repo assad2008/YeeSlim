@@ -58,7 +58,7 @@ abstract class AbstractFunctions implements FunctionsInterface, ServiceFunctions
      *
      * @api
      */
-    const VERSION = '1.12.0';
+    const VERSION = '1.13.0';
 
     //--------------------------------------------------------------------------
 

@@ -1,11 +1,11 @@
 # Component: UCSDMath Project
-# Date: 2016-06-11
+# Date: 2017-02-05
 # File: .scrutinizer.yml
 # -----------------------------------
 build:
     environment:
         mysql: 5.7
-        php: 7.0.8
+        php: 7.1.1
 before_commands:
     - "composer install --dev --prefer-source"
 tools:

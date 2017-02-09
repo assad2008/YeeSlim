@@ -29,9 +29,7 @@
         <a href="https://codeclimate.com/github/ucsdmath/Functions">
         <img src="https://codeclimate.com/github/ucsdmath/Functions/badges/gpa.svg"></a><br>
         <a href="https://travis-ci.org/ucsdmath/Functions">
-        <img src="http://php7ready.timesplinter.ch/ucsdmath/Functions/badge.svg"></a><br>
-        <a href="https://codeship.com/">
-        <img src="https://app.codeship.com/projects/b362e5a0-98a5-0134-d366-422e888d6aa3/status?branch=master"></a>
+        <img src="http://php7ready.timesplinter.ch/ucsdmath/Functions/badge.svg"></a>
 </td></tr></table></td></tr></table>
 <table width="890"><tr>
     <td width="116" align="center"><b>Scrutinizer</b></td>

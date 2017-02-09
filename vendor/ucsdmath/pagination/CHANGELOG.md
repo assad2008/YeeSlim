@@ -1,10 +1,61 @@
 ## CHANGELOG
 ============
 
-All notable changes to `UCSDMath\Pagination` (bug, security fixes, and component
+All notable changes to `UCSDMath/Pagination` (bug, security fixes, and component
 updates) will be documented in this file.
 
-### 1.12.0 (2017-01-02)
+### v1.13.0 (2017-02-05)
+
+ - Update to `npm` [(v4.1.2)](https://www.npmjs.com)
+ - Update to `TinyMCE` [(v4.5.3)](http://www.tinymce.com/download/download.php)
+ - Update to `Node.js` [(v7.5.0)](https://nodejs.org/en/)
+ - Update to `Composer` [(v1.3.2)](https://getcomposer.org)
+ - Update to `Babel.js` [(v6.22.2)](https://babeljs.io)
+ - Update to `React.js` [(v15.4.1)](https://facebook.github.io/react/)
+ - Update to `WordPress` [(v4.7.0)](https://wordpress.org)
+ - Update to `Webpack.js` [(v2.2.1)](https://webpack.js.org)
+ - Update to `tablesorter` jQuery plugin [(v2.28.4)](https://mottie.github.io/tablesorter/docs/)
+ - Update to PHP Component: `symfony/yaml` [(v3.2.2)](https://packagist.org/packages/symfony/yaml)
+ - Update to PHP Component: `symfony/debug` [(v3.2.2)](https://packagist.org/packages/symfony/debug)
+ - Update to PHP Component: `symfony/finder` [(v3.2.2)](https://packagist.org/packages/symfony/finder)
+ - Update to PHP Component: `symfony/console` [(v3.2.2)](https://packagist.org/packages/symfony/console)
+ - Update to PHP Component: `symfony/process` [(v3.2.2)](https://packagist.org/packages/symfony/process)
+ - Update to PHP Component: `symfony/routing` [(v3.2.2)](https://packagist.org/packages/symfony/routing)
+ - Update to PHP Component: `symfony/validator` [(v3.2.2)](https://packagist.org/packages/symfony/validator)
+ - Update to PHP Component: `symfony/filesystem` [(v3.2.2)](https://packagist.org/packages/symfony/filesystem)
+ - Update to PHP Component: `symfony/serializer` [(v3.2.2)](https://packagist.org/packages/symfony/serializer)
+ - Update to PHP Component: `symfony/var-dumper` [(v3.2.2)](https://packagist.org/packages/symfony/var-dumper)
+ - Update to PHP Component: `symfony/http-kernel` [(v3.2.2)](https://packagist.org/packages/symfony/http-kernel)
+ - Update to PHP Component: `symfony/http-foundation` [(v3.2.2)](https://packagist.org/packages/symfony/http-foundation)
+ - Update to PHP Component: `symfony/event-dispatcher` [(v3.2.2)](https://packagist.org/packages/symfony/event-dispatcher)
+ - Update to PHP Component: `symfony/framework-bundle` [(v3.2.2)](https://packagist.org/packages/symfony/framework-bundle)
+ - Update to PHP Component: `twig/twig` [(v2.1.0)](https://packagist.org/packages/twig/twig)
+ - Update to PHP Component: `doctrine/dbal` [(v2.5.11)](https://packagist.org/packages/doctrine/dbal)
+ - Update to PHP Component: `league/flysystem` [(v1.0.34)](https://packagist.org/packages/league/flysystem)
+ - Update to PHP Component: `nesbot/carbon ` [(v1.22.1)](https://packagist.org/packages/nesbot/carbon)
+ - Update to PHP Component: `phpunit/phpunit` [(v6.0.5)](https://packagist.org/packages/phpunit/phpunit)
+ - Update to PHP Component: `doctrine/common ` [(v2.7.2)](https://packagist.org/packages/doctrine/common)
+ - Update to PHP Component: `respect/validation` [(v1.1.11)](https://packagist.org/packages/respect/validation)
+ - Update to PHP Component: `ezyang/htmlpurifier ` [(v4.8.0)](https://packagist.org/packages/ezyang/htmlpurifier)
+ - Update to PHP Component: `doctrine/collections ` [(v1.4.0)](https://packagist.org/packages/doctrine/collections)
+ - Update to PHP Component: `egulias/email-validator` [(v2.1.2)](https://packagist.org/packages/egulias/email-validator)
+ - Update to PHP Component: `squizlabs/php_codesniffer` [(v2.8.0)](https://github.com/squizlabs/PHP_CodeSniffer)
+ - Update to PHP Component: `mtdowling/cron-expression` [(v1.2.0)](https://packagist.org/packages/mtdowling/cron-expression)
+ - Added new PHP Component: `jenssegers/optimus` [(v0.2.2)](https://packagist.org/packages/jenssegers/optimus)
+
+ - Update: `UCSDMath/Filesystem` dependency on `UCSDMath/Functions` has been removed.
+ - Update: `UCSDMath/Serialization` dependency on `UCSDMath/Functions` has been removed.
+ - Update: `UCSDMath/ConfigurationVault` dependency on `UCSDMath/Functions` has been removed.
+ - Update: `UCSDMath/ConfigurationVault` component to now uses OpenSSL, mcrypt_decrypt()/mcrypt_encrypt() have been removed (i.e., Deprecated as of PHPv7.1)
+
+ - Added: `UCSDMath/Testing::Benchmark` allows multiple named instances to be used (thanks to: [Tobias Matthaiou](https://github.com/sd-tm))
+ - Added: multiple new routines using OpenSSL for encrypt/decrypt data
+ - Added: method provided by [Jarddel Antunes `jarddel`](https://github.com/jarddel) to import PDF pages: importPages(string $filePath)
+ - Added: Bulleted Lists, Ordered Lists, Tables (rows, columns), and Insert of Date, and Time Stamps to notes sections of Portal applications.
+
+ - Fix: moving from 1.x to 2.x of Twig found error in  divisibleby() <=> divisible by();
+
+### v1.12.0 (2017-01-02)
 
  - Update to `npm` [(v4.0.5)] [1]
  - Update to `Moment` [(2.17.1)] [2]
@@ -67,7 +118,7 @@ updates) will be documented in this file.
 [28]: http://www.doctrine-project.org
 [29]: https://github.com/scottschiller/snowstorm/
 
-### 1.11.0 (2016-12-02)
+### v1.11.0 (2016-12-02)
 
  - Update to `npm` (v4.0.2)
  - Update to `Moment` [(2.15.2)
@@ -182,7 +233,7 @@ updates) will be documented in this file.
     - Published new Javascript package (npm): `ucsdmath/appointment-diary-collection-js` (v1.11.0)
     - Published new Javascript package (npm): `ucsdmath/system-user-settings-collection-js` (v1.11.0)
 
-### 1.10.0 (2016-10-20)
+### v1.10.0 (2016-10-20)
 
  - Update to `jQuery` (v3.1.1)
  - Update to `Symfony` (v3.1.5)
@@ -288,22 +339,22 @@ updates) will be documented in this file.
     - {bool}   isValidMacAddress(string address);
     - {Array}  arrayPush(array array, array values);
 
-### 1.9.0 (2016-08-21)
+### v1.9.0 (2016-08-21)
 
  - Update to Phpunit (v5.5.2)
- - Fixed `UCSDMath\Pdf` setFooter() due to changes in mPDF
- - Update `UCSDMath\Session` no longer uses superglobal variable
- - Update `UCSDMath\Passport` to use session via `NamespacedAttributeBag`
- - Update `UCSDMath\Session` to use session via `NamespacedAttributeBag`
- - Update `UCSDMath\Session` to work in a namespace enviroment under `UCSDMath`
- - Update `UCSDMath\Mail` features were greatly improved
+ - Fixed `UCSDMath/Pdf` setFooter() due to changes in mPDF
+ - Update `UCSDMath/Session` no longer uses superglobal variable
+ - Update `UCSDMath/Passport` to use session via `NamespacedAttributeBag`
+ - Update `UCSDMath/Session` to use session via `NamespacedAttributeBag`
+ - Update `UCSDMath/Session` to work in a namespace enviroment under `UCSDMath`
+ - Update `UCSDMath/Mail` features were greatly improved
  - Added use of PNotify (v3.0.0)
- - Fixed issue with .htaccess for directory name schemes and `UCSDMath\Asset` cache busting
+ - Fixed issue with .htaccess for directory name schemes and `UCSDMath/Asset` cache busting
  - Fixed javascript pagination/search state properties for directory list view
  - Fixed many bugs/security issues with use of: Scrutinizer CI, Travis CI, Code Climate, SensioLabsInsight, and Codacy.
  - All dependencies are up-to-date/verified through VersionEye.
 
-### 1.8.0 (2016-07-31)
+### v1.8.0 (2016-07-31)
 
  - Update to jQuery (v3.1.0)
  - Update to Bootstrap (v3.3.7)
@@ -314,7 +365,7 @@ updates) will be documented in this file.
  - Update to Hashids (v1.1.0) js
  - Update to Symfony (v3.1.3)
  - Update to Phpunit (v5.4.8)
- - Improved many features/refactoring `UCSDMath\TemplateFactory`
+ - Improved many features/refactoring `UCSDMath/TemplateFactory`
  - Fixed many major and minor bugs
  - Improved many clearing component checks with Scrutinizer
  - Improved many clearing component checks with SensioLabsInsight
@@ -323,7 +374,7 @@ updates) will be documented in this file.
  - Fixed many bugs/security on: Scrutinizer CI, Travis CI, Code Climate, SensioLabsInsight, and Codacy.
  - All dependencies are up-to-date/verified through VersionEye.
 
-### 1.7.0 (2016-07-03)
+### v1.7.0 (2016-07-03)
 
  - Update to jQuery (v2.2.4)
  - Update to jQuery-Timepicker-Addon (v1.6.3)
@@ -334,20 +385,20 @@ updates) will be documented in this file.
  - Update to Tiny-MCE (v4.4.0)
  - Update to Monolog (v1.20.0)
  - Update to Symfony (v3.1.2)
- - Initial Release of `UCSDMath\Asset`
- - Initial Release of `UCSDMath\Cache`
- - Initial Release of `UCSDMath\Passport`
- - Improved many features/refactoring `UCSDMath\Database`
- - Improved many features/refactoring `UCSDMath\DependencyInjection`
- - Improved many features/refactoring `UCSDMath\Framework`
- - Improved many features/refactoring `UCSDMath\Functions`
- - Improved many features/refactoring `UCSDMath\TemplateFactory`
+ - Initial Release of `UCSDMath/Asset`
+ - Initial Release of `UCSDMath/Cache`
+ - Initial Release of `UCSDMath/Passport`
+ - Improved many features/refactoring `UCSDMath/Database`
+ - Improved many features/refactoring `UCSDMath/DependencyInjection`
+ - Improved many features/refactoring `UCSDMath/Framework`
+ - Improved many features/refactoring `UCSDMath/Functions`
+ - Improved many features/refactoring `UCSDMath/TemplateFactory`
  - Fixed many major and minor bugs
  - Improved many clearing component checks with Scrutinizer
  - Improved many clearing component checks with SensioLabsInsight
  - Improved many methods using `PHP 7` return types
 
-### 1.6.0 (2016-02-19)
+### v1.6.0 (2016-02-19)
 
  - Now converted to `PHP 7` Strict Type; use return types, scalar hints, and random_bytes();
  - Update jQuery to `v2.2.0`
@@ -355,21 +406,21 @@ updates) will be documented in this file.
  - Update Tiny MCE to `v4.3.4`
  - Added Modernizr `v3.2.0`
  - Update HTML5 Boilerplate to `v5.3.0` (for minor changes to UCSD Decorator 4)
- - Initial Release of `UCSDMath\Mail`
- - Initial Release of `UCSDMath\Omnilock`
- - Initial Release of `UCSDMath\FileManager`
- - Initial Release of `UCSDMath\Annotations`
- - Initial Release of `UCSDMath\FormManager`
- - Initial Release of `UCSDMath\CronScheduler`
- - Initial Release of `UCSDMath\Date`
- - Initial Release of `UCSDMath\Storage`
- - Initial Release of `UCSDMath\Maillist`
- - Initial Release of `UCSDMath\Mail`
- - Fixed minor changes to `UCSDMath\DepartmentSpecificFunctions` adding `Carbon\Carbon`
+ - Initial Release of `UCSDMath/Mail`
+ - Initial Release of `UCSDMath/Omnilock`
+ - Initial Release of `UCSDMath/FileManager`
+ - Initial Release of `UCSDMath/Annotations`
+ - Initial Release of `UCSDMath/FormManager`
+ - Initial Release of `UCSDMath/CronScheduler`
+ - Initial Release of `UCSDMath/Date`
+ - Initial Release of `UCSDMath/Storage`
+ - Initial Release of `UCSDMath/Maillist`
+ - Initial Release of `UCSDMath/Mail`
+ - Fixed minor changes to `UCSDMath/DepartmentSpecificFunctions` adding `Carbon\Carbon`
 
-### 1.5.0 (2015-12-05)
+### v1.5.0 (2015-12-05)
 
- - Update minor changes to `UCSDMath\DependencyInjection`
+ - Update minor changes to `UCSDMath/DependencyInjection`
  - Update minor SQL fixes
  - Update coding changes anticipation of PHP7
  - Update dependency to Symfony 3.0 (removed all 2.x)
@@ -378,7 +429,7 @@ updates) will be documented in this file.
  - Added minor changes to ready PHP7 phase
  - Various JavaScript updates
 
-### 1.4.0 (2015-10-12)
+### v1.4.0 (2015-10-12)
 
  - Update DDL database schema for system_logs, office_hours, ta_assignments
  - Update comments to Entity and Maps for use with Persistance class.
@@ -387,7 +438,7 @@ updates) will be documented in this file.
  - Corrected and updated method in Pagination
  - other items were done...
 
-### 1.3.0 (2015-09-29)
+### v1.3.0 (2015-09-29)
 
  - New use of ORM and class called Persistence
  - Created 38 new Entity and maps for testing database tables.
@@ -395,21 +446,21 @@ updates) will be documented in this file.
  - Javascript updates
  - Update some logging output for various applications
 
-### 1.2.0 (2015-09-10)
+### v1.2.0 (2015-09-10)
 
  - Update core javascript
  - Added boolean AND as default for word spacing all applications
  - Update AbstractDatabase to work with DDL/SQL Updates
  - Structural updates various
 
-### 1.1.0 (2015-08-07)
+### v1.1.0 (2015-08-07)
 
  - Update core javascript
  - Added boolean AND as default for word spacing
  - Added new class component Pagination
  - Minor configuration changes
 
-### 1.0.5 (2015-07-25)
+### v1.0.5 (2015-07-25)
 
- - Initial Release of `UCSDMath\Pagination`
+ - Initial Release of `UCSDMath/Pagination`
  - Initial Release version starts at v1.0.5 as introduced to the framework
