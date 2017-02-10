@@ -13,6 +13,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
+        '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
         'a630172eaa9c0ebea1574d4268022476' => __DIR__ . '/../..' . '/src/func/functions.php',
         '8e89ecc53dec3973b10f0c8476f77c04' => __DIR__ . '/..' . '/template_lite/src/class.template.php',
     );
@@ -42,6 +43,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+            'Stringy\\' => 8,
             'Slim\\Middleware\\' => 16,
             'Slim\\Csrf\\' => 10,
             'Slim\\' => 5,
@@ -155,6 +157,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Stringy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/danielstjules/stringy/src',
         ),
         'Slim\\Middleware\\' => 
         array (

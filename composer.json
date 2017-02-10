@@ -28,7 +28,8 @@
 		"ngfw/recipe": "^1.2",
 		"kosinix/grafika": "~2",
 		"guzzlehttp/guzzle": "~5",
-		"league/flysystem": "^1.0"
+		"league/flysystem": "^1.0",
+		"danielstjules/stringy": "^2.3"
 	},
 	"autoload": {
 		"classmap":[
