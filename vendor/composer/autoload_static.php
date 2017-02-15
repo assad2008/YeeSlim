@@ -58,6 +58,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
             'Predis\\' => 7,
         ),
         'M' => 
@@ -193,6 +194,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Predis\\' => 
         array (

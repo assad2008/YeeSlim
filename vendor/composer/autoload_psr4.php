@@ -28,6 +28,7 @@ return array(
     'RKA\\Middleware\\' => array($vendorDir . '/akrabat/rka-ip-address-middleware/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Predis\\' => array($vendorDir . '/predis/predis/src'),
     'Moontoast\\Math\\' => array($vendorDir . '/moontoast/math/src/Moontoast/Math'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
