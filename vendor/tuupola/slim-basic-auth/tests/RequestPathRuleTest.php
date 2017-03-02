@@ -3,7 +3,7 @@
 /*
  * This file is part of Slim HTTP Basic Authentication middleware
  *
- * Copyright (c) 2013-2016 Mika Tuupola
+ * Copyright (c) 2013-2017 Mika Tuupola
  *
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -117,5 +117,45 @@ class RequestPathTest extends \PHPUnit_Framework_TestCase
             ->withMethod("GET");
 
         $this->assertFalse($rule($request));
+    }
+
+    public function testBug50ShouldAuthenticateMultipleSlashes()
+    {
+        $request = (new Request)
+            ->withUri(new Uri("https://example.com/"))
+            ->withMethod("GET");
+
+        $rule = new RequestPathRule(["path" => "/v1/api"]);
+        $this->assertFalse($rule($request));
+
+        $request = (new Request)
+            ->withUri(new Uri("https://example.com/v1/api"))
+            ->withMethod("GET");
+
+        $this->assertTrue($rule($request));
+
+        $request = (new Request)
+            ->withUri(new Uri("https://example.com/v1//api"))
+            ->withMethod("GET");
+
+        $this->assertTrue($rule($request));
+
+        $request = (new Request)
+            ->withUri(new Uri("https://example.com/v1//////api"))
+            ->withMethod("GET");
+
+        $this->assertTrue($rule($request));
+
+        $request = (new Request)
+            ->withUri(new Uri("https://example.com//v1/api"))
+            ->withMethod("GET");
+
+        $this->assertTrue($rule($request));
+
+        $request = (new Request)
+            ->withUri(new Uri("https://example.com//////v1/api"))
+            ->withMethod("GET");
+
+        $this->assertTrue($rule($request));
     }
 }
