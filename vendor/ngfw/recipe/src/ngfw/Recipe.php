@@ -103,7 +103,7 @@ class Recipe
      */
     public static function createLinkTag($link, $text = '', $attributes = [])
     {
-        $linkTag = '<a href="'.$link.'"';
+        $linkTag = '<a href="'.str_replace(['"', "'"], [urlencode('"'), urlencode("'")], $link).'"';
 
         if (self::validateEmail($link)) {
             $linkTag = '<a href="mailto:'.$link.'"';
@@ -233,28 +233,29 @@ class Recipe
                     $object->{$name} = $value;
                 }
             }
-
-            return $object;
         }
+
+        return $object;
     }
 
     /**
      * Convert Array to string.
      *
-     * @param array $array array to convert to string
+     * @param array  $array     array to convert to string
+     * @param string $delimiter
      *
      * @throws \Exception
      *
      * @return string <key1>="value1" <key2>="value2"
      */
-    public static function arrayToString(array $array = [])
+    public static function arrayToString(array $array = [], $delimiter = ' ')
     {
         $pairs = [];
         foreach ($array as $key => $value) {
             $pairs[] = "$key=\"$value\"";
         }
 
-        return implode(' ', $pairs);
+        return implode($delimiter, $pairs);
     }
 
     /**
@@ -314,14 +315,19 @@ class Recipe
     /**
      * Generate Simple Random Password.
      *
-     * @param int $length length of generated password, default 8
+     * @param int    $length         length of generated password, default 8
+     * @param string $customAlphabet a custom alphabet string
      *
      * @return string Generated Password
      */
-    public static function generateRandomPassword($length = 8)
+    public static function generateRandomPassword($length = 8, $customAlphabet = null)
     {
         $pass = [];
-        $alphabet = 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
+        if (strlen(trim($customAlphabet))) {
+            $alphabet = trim($customAlphabet);
+        } else {
+            $alphabet = 'abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789';
+        }
 
         $alphaLength = strlen($alphabet) - 1;
         for ($i = 0; $i < $length; ++$i) {
@@ -1352,8 +1358,35 @@ class Recipe
         echo '</pre>';
     }
 
+    /**
+     * Sanitize FileName from special chart.
+     *
+     * @method sanitizeFileName
+     *
+     * @param string $filename filename to sanitize
+     *
+     * @return string Sanitized filename
+     */
     public static function sanitizeFileName($filename)
     {
         return str_replace([' ', '"', "'", '&', '/', '\\', '?', '#'], '_', $filename);
+    }
+
+    /**
+     * Converts bytes to human readable size.
+     *
+     * @method bytesToHumanReadableSize
+     *
+     * @param int $size      Size in bytes
+     * @param int $precision returned value precision
+     *
+     * @return string Human readable size
+     */
+    public static function bytesToHumanReadableSize($size, $precision = 2)
+    {
+        for ($i = 0; ($size / 1024) > 0.9; $i++, $size /= 1024) {
+        }
+
+        return round($size, $precision).' '.['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'][$i];
     }
 }

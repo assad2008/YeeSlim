@@ -12,8 +12,8 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
-        '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
+        '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         'a630172eaa9c0ebea1574d4268022476' => __DIR__ . '/../..' . '/src/func/functions.php',
         '8e89ecc53dec3973b10f0c8476f77c04' => __DIR__ . '/..' . '/template_lite/src/class.template.php',
     );
@@ -282,6 +282,17 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
     );
 
     public static $prefixesPsr0 = array (
+        'Z' => 
+        array (
+            'Zend_Registry' => 
+            array (
+                0 => __DIR__ . '/..' . '/zf1/zend-registry/library',
+            ),
+            'Zend_Exception' => 
+            array (
+                0 => __DIR__ . '/..' . '/zf1/zend-exception/library',
+            ),
+        ),
         'U' => 
         array (
             'Upload' => 

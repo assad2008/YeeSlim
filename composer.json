@@ -29,7 +29,8 @@
 		"kosinix/grafika": "~2",
 		"guzzlehttp/guzzle": "~5",
 		"league/flysystem": "^1.0",
-		"danielstjules/stringy": "^2.3"
+		"danielstjules/stringy": "^2.3",
+		"zf1/zend-registry": "^1.12"
 	},
 	"autoload": {
 		"classmap":[

@@ -688,6 +688,7 @@ class Connection implements ConnectionInterface
      * @param  array  $bindings
      * @param  \Closure  $callback
      * @return mixed
+     * @throws \Exception
      */
     protected function handleQueryException($e, $query, $bindings, Closure $callback)
     {
@@ -957,10 +958,10 @@ class Connection implements ConnectionInterface
     /**
      * Get an option from the configuration options.
      *
-     * @param  string  $option
+     * @param  string|null  $option
      * @return mixed
      */
-    public function getConfig($option)
+    public function getConfig($option = null)
     {
         return Arr::get($this->config, $option);
     }
