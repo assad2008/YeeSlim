@@ -37,7 +37,7 @@ Tracy requires PHP version 5.4.4 or newer (is compatible with PHP 7.0 and 7.1). 
 Usage
 -----
 
-Activating Tracy is easy. Simply add these two lines of code, preferably just after library loading (like `require 'vendor/autoload.php'`):
+Activating Tracy is easy. Simply add these two lines of code, preferably just after library loading (like `require 'vendor/autoload.php'`) and before any output is sent to browser:
 
 ```php
 use Tracy\Debugger;
@@ -46,6 +46,9 @@ Debugger::enable();
 ```
 
 The first thing you will notice on the website is a Debugger Bar.
+
+(If you do not see anything, it means that Tracy is running in production mode. For security reasons, Tracy is visible only on localhost.
+You may force Tracy to run in development mode by passing the `Debugger::DEVELOPMENT` as the first parameter of `enable()` method.)
 
 
 Debugger Bar
@@ -100,7 +103,7 @@ Errors like a typo in a variable name or an attempt to open a nonexistent file g
 Or they may be displayed like errors:
 
 ```php
-Debugger::$strictMode = TRUE;
+Debugger::$strictMode = true;
 ```
 
 [![Notice rendered by Tracy](https://nette.github.io/tracy/images/tracy-notice.png)](https://nette.github.io/tracy/tracy-notice.html)
@@ -187,7 +190,7 @@ Variable dumping
 Every debugging developer is a good friend with the function `var_dump`, which lists all contents of any variable in detail. Unfortunately, its output is without HTML formatting and outputs the dump into a single line of HTML code, not to mention context escaping. It is necessary to replace the `var_dump` by a handier function. That is just what `Debugger::dump()` is.
 
 ```php
-$arr = array(10, 20.2, TRUE, NULL, 'hello');
+$arr = array(10, 20.2, true, null, 'hello');
 
 dump($arr);
 // or Tracy\Debugger::dump($arr);
@@ -209,8 +212,8 @@ The `dump()` function can display other useful information. `Tracy\Dumper::LOCAT
 ```php
 Debugger::$showLocation = Tracy\Dumper::LOCATION_SOURCE; // Shows path to where the dump() was called
 Debugger::$showLocation = Tracy\Dumper::LOCATION_CLASS | Tracy\Dumper::LOCATION_LINK; // Shows both paths to the classes and link to where the dump() was called
-Debugger::$showLocation = FALSE; // Hides additional location information
-Debugger::$showLocation = TRUE; // Shows all additional location information
+Debugger::$showLocation = false; // Hides additional location information
+Debugger::$showLocation = true; // Shows all additional location information
 ```
 
 Very handy alternative to `Debugger::dump()` is `Debugger::barDump()`. This allows us to dump variables in Debugger Bar. This is useful, because dumps don't mess up the output and we can also add a title to the dump.
@@ -292,3 +295,16 @@ Debugger::fireLog(new Exception('Test Exception')); // or exceptions
 The result looks like this:
 
 ![FireLogger](https://nette.github.io/tracy/images/tracy-firelogger.png)
+
+Ports
+-----------------------------
+This is list of unofficial ports to another frameworks and CMS than Nette:
+- [Drupal 7](http://drupal.org/project/traced)
+- Laravel framework: [recca0120/laravel-tracy](https://github.com/recca0120/laravel-tracy), [whipsterCZ/laravel-tracy](https://github.com/whipsterCZ/laravel-tracy)
+- [OpenCart](https://github.com/BurdaPraha/oc_tracy)
+- [ProcessWire CMS/CMF](https://github.com/adrianbj/TracyDebugger)
+- [Slim Framework](https://github.com/runcmf/runtracy)
+- Symfony framework: [kutny/tracy-bundle](https://github.com/kutny/tracy-bundle), [VasekPurchart/Tracy-Blue-Screen-Bundle](https://github.com/VasekPurchart/Tracy-Blue-Screen-Bundle)
+- [Wordpress](https://github.com/ktstudio/WP-Tracy)
+
+... feel free to be famous, create a port for your favourite platform!

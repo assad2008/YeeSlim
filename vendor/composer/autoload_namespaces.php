@@ -15,5 +15,4 @@ return array(
     'Purl' => array($vendorDir . '/jwage/purl/src'),
     'Pimple' => array($vendorDir . '/pimple/pimple/src'),
     'Pdp\\' => array($vendorDir . '/jeremykendall/php-domain-parser/library'),
-    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
 );

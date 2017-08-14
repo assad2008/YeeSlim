@@ -98,6 +98,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         ),
         'D' => 
         array (
+            'Doctrine\\Common\\Inflector\\' => 26,
             'Doctrine\\Common\\Cache\\' => 22,
         ),
         'C' => 
@@ -271,6 +272,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'Doctrine\\Common\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
@@ -331,13 +336,6 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
             'Pdp\\' => 
             array (
                 0 => __DIR__ . '/..' . '/jeremykendall/php-domain-parser/library',
-            ),
-        ),
-        'D' => 
-        array (
-            'Doctrine\\Common\\Inflector\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
             ),
         ),
     );
