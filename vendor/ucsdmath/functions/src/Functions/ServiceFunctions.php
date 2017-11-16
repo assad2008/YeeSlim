@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -20,9 +20,6 @@ namespace UCSDMath\Functions;
  * {@link ServiceFunctions} is a trait method implimentation requirement used in this framework.
  * This set is specifically used in Functions classes.
  *
- * use UCSDMath\Functions\ServiceFunctions;
- * use UCSDMath\Functions\ServiceFunctionsInterface;
- *
  * Method list: (+) @api, (-) protected or private visibility.
  *
  * (+) array all();
@@ -32,16 +29,16 @@ namespace UCSDMath\Functions;
  * (+) bool has(string $key);
  * (+) string getClassName();
  * (+) int getInstanceCount();
- * (+) array getClassInterfaces();
  * (+) mixed getConst(string $key);
+ * (+) array getClassInterfaces();
  * (+) bool isValidUuid(string $uuid);
  * (+) bool isValidEmail(string $email);
  * (+) bool isValidSHA512(string $hash);
- * (+) mixed __call($callback, $parameters);
- * (+) bool doesFunctionExist($functionName);
+ * (+) bool doesFunctionExist(string $functionName);
  * (+) bool isStringKey(string $str, array $keys);
  * (+) mixed get(string $key, string $subkey = null);
  * (+) mixed getProperty(string $name, string $key = null);
+ * (+) mixed __call(string $callback, array $parameters);
  * (+) object set(string $key, $value, string $subkey = null);
  * (+) object setProperty(string $name, $value, string $key = null);
  * (-) Exception throwExceptionError(array $error);
@@ -67,39 +64,46 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Return the storageRegister array.
+     *
+     * @return array
+     *
+     * @api
      */
-    public function getProperty(string $name, string $key = null)
+    public function all(): array
     {
-        return null === $key ? $this->{$name} : $this->{$name}[$key];
+        return $this->getProperty('storageRegister');
     }
 
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Initialization (Singleton Pattern).
+     *
+     * @static
+     *
+     * @return The current instance
+     *
+     * @api
      */
-    public function __call($callback, $parameters)
+    public static function init()
     {
-        return call_user_func_array($this->$callback, $parameters);
+        if (null === static::$instance) {
+            static::$instance = new static;
+            static::$objectCount++;
+        }
+
+        return static::$instance;
     }
 
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
-     */
-    public function setProperty(string $name, $value, string $key = null)
-    {
-        (null === $key) ? $this->{$name} = $value : $this->{$name}[$key] = $value;
-
-        return $this;
-    }
-
-    //--------------------------------------------------------------------------
-
-    /**
-     * {@inheritdoc}
+     * Get the version number of the application.
+     *
+     * @return string
+     *
+     * @api
      */
     public function version(): string
     {
@@ -109,7 +113,48 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Basic string validation.
+     *
+     * @param string $str The input parameter
+     *
+     * @return bool
+     */
+    public function isString($str): bool
+    {
+        /**
+         * Before using trim(), proxy the input; avoid type cast.
+         */
+        $str = is_string($str)
+            ? trim($str)
+            : $str;
+
+        return is_string($str) && !empty($str);
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Return true if parameter is defined.
+     *
+     * @param string $key The parameter name
+     *
+     * @return bool
+     *
+     * @api
+     */
+    public function has(string $key): bool
+    {
+        return array_key_exists($key, $this->getProperty('storageRegister'));
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Returns the current class name.
+     *
+     * @return string
+     *
+     * @api
      */
     public function getClassName(): string
     {
@@ -119,7 +164,27 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Returns instance count.
+     *
+     * @static
+     *
+     * @return int
+     *
+     * @api
+     */
+    public static function getInstanceCount(): int
+    {
+        return (int) static::$objectCount;
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Return class interfaces.
+     *
+     * @return array
+     *
+     * @api
      */
     public function getClassInterfaces(): array
     {
@@ -129,7 +194,15 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Get constant property value.
+     *
+     * @param string $key The constant property name
+     *
+     * @return mixed The constant property value
+     *
+     * @throws \InvalidArgumentException if the property name is not defined
+     *
+     * @api
      */
     public function getConst(string $key)
     {
@@ -148,68 +221,85 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Validate a (v4) UUID.
+     *
+     * @param string $uuid The UUID string to validate
+     *
+     * @return bool
      */
-    public static function init()
+    public function isValidUuid(string $uuid): bool
     {
-        if (null === static::$instance) {
-            static::$instance = new static;
-            static::$objectCount++;
-        }
-
-        return static::$instance;
+        return (bool) preg_match(static::VALID_UUID_PATTERN, $uuid);
     }
 
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Validate a email address.
+     *
+     * @param string $email The email address to validate
+     *
+     * @return bool
      */
-    public static function getInstanceCount(): int
+    public function isValidEmail(string $email): bool
     {
-        return (int) static::$objectCount;
+        return filter_var(filter_var($email, FILTER_SANITIZE_EMAIL), FILTER_VALIDATE_EMAIL) !== false;
     }
 
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Basic SHA-512 hash validation.
+     *
+     * @param string $hash The hash to validate
+     *
+     * @return bool
      */
-    public function isString($str): bool
+    public function isValidSHA512(string $hash): bool
     {
-        /**
-         * Before using trim(), proxy the input; avoid type cast.
-         */
-        $str = is_string($str) ? trim($str) : $str;
-
-        return is_string($str) && ! empty($str);
+        return (bool) preg_match('/^[a-fA-F\d]{128}$/', $hash);
     }
 
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
-     */
-    public function has(string $key): bool
-    {
-        return array_key_exists($key, $this->getProperty('storageRegister'));
-    }
-
-    //--------------------------------------------------------------------------
-
-    /**
-     * {@inheritdoc}
+     * Basic string and array keys validation.
+     *
+     * @param string $str  The input parameter
+     * @param array  $keys The associative array parameter
+     *
+     * @return bool
      */
     public function isStringKey(string $str, array $keys): bool
     {
-        return $this->isString($str)
-            && array_key_exists($str, $keys);
+        return $this->isString($str) && array_key_exists($str, $keys);
     }
 
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Check if a required function exists.
+     *
+     * @param string $functionName The function name to check.
+     *
+     * @return bool The confirmation that the function exists.
+     */
+    public static function doesFunctionExist(string $functionName): bool
+    {
+        return function_exists($functionName);
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Get a storageRegister element.
+     *
+     * @param string $key    The element name
+     * @param string $subkey The element subkey name
+     *
+     * @return mixed The element value
+     *
+     * @api
      */
     public function get(string $key, string $subkey = null)
     {
@@ -221,7 +311,52 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Forward to any callable, including anonymous functions
+     * (or any instances of \Closure).
+     *
+     * @param string $callback   The named callable to be called.
+     * @param array  $parameters The parameters to be passed to the callback, as an indexed array.
+     *
+     * @return mixed the return value of the callback, or false on error.
+     *
+     * @api
+     */
+    public function __call(string $callback, array $parameters)
+    {
+        return call_user_func_array($this->$callback, $parameters);
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Get a property value.
+     *
+     * @param string $name The property name
+     * @param string $key  The optional property key index
+     *
+     * @return mixed The property value
+     *
+     * @api
+     */
+    public function getProperty(string $name, string $key = null)
+    {
+        return null === $key
+            ? $this->{$name}
+            : $this->{$name}[$key];
+    }
+
+    //--------------------------------------------------------------------------
+
+    /**
+     * Set a storageRegister element.
+     *
+     * @param string $key    The element name
+     * @param mixed  $value  The element value
+     * @param string $subkey The element subkey name
+     *
+     * @return The current instance
+     *
+     * @api
      */
     public function set(string $key, $value, string $subkey = null)
     {
@@ -235,21 +370,21 @@ trait ServiceFunctions
     //--------------------------------------------------------------------------
 
     /**
-     * {@inheritdoc}
+     * Set a property value.
+     *
+     * @param string $name  The property name
+     * @param mixed  $value The property value
+     * @param string $key   The optional key index
+     *
+     * @api
      */
-    public function all(): array
+    public function setProperty(string $name, $value, string $key = null)
     {
-        return $this->getProperty('storageRegister');
-    }
+        (null === $key)
+            ? $this->{$name} = $value
+            : $this->{$name}[$key] = $value;
 
-    //--------------------------------------------------------------------------
-
-    /**
-     * {@inheritdoc}
-     */
-    public static function doesFunctionExist($functionName): bool
-    {
-        return function_exists($functionName);
+        return $this;
     }
 
     //--------------------------------------------------------------------------
@@ -290,48 +425,6 @@ trait ServiceFunctions
             $error[2],
             $error[3]
         ));
-    }
-
-    //--------------------------------------------------------------------------
-
-    /**
-     * Validate a email address.
-     *
-     * @param string $email The email address to validate
-     *
-     * @return bool
-     */
-    public function isValidEmail(string $email): bool
-    {
-        return filter_var(filter_var($email, FILTER_SANITIZE_EMAIL), FILTER_VALIDATE_EMAIL) !== false;
-    }
-
-    //--------------------------------------------------------------------------
-
-    /**
-     * Validate a (v4) UUID.
-     *
-     * @param string $uuid The UUID string to validate
-     *
-     * @return bool
-     */
-    public function isValidUuid(string $uuid): bool
-    {
-        return (bool) preg_match(static::VALID_UUID_PATTERN, $uuid);
-    }
-
-    //--------------------------------------------------------------------------
-
-    /**
-     * Basic SHA-512 hash validation.
-     *
-     * @param string $hash The hash to validate
-     *
-     * @return bool
-     */
-    public function isValidSHA512(string $hash): bool
-    {
-        return (bool) preg_match('/^[a-fA-F\d]{128}$/', $hash);
     }
 
     //--------------------------------------------------------------------------

@@ -1,11 +1,11 @@
 # Component: UCSDMath Project
-# Date: 2017-02-05
+# Date: 2017-07-09
 # File: .scrutinizer.yml
 # -----------------------------------
 build:
     environment:
         mysql: 5.7
-        php: 7.1.1
+        php: 7.1.6
 before_commands:
     - "composer install --dev --prefer-source"
 tools:
@@ -102,4 +102,4 @@ checks:
             preserve_blanklines: false
             order_alphabetically: false
 filter:
-    excluded_paths: ["tests/*"]
+    excluded_paths: ["tests/*", "resource/*"]

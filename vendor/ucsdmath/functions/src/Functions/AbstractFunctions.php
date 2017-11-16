@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -58,7 +58,7 @@ abstract class AbstractFunctions implements FunctionsInterface, ServiceFunctions
      *
      * @api
      */
-    const VERSION = '1.13.0';
+    public const VERSION = '1.28.0';
 
     //--------------------------------------------------------------------------
 
@@ -352,16 +352,16 @@ abstract class AbstractFunctions implements FunctionsInterface, ServiceFunctions
      * (+) bool has(string $key);
      * (+) string getClassName();
      * (+) int getInstanceCount();
-     * (+) array getClassInterfaces();
      * (+) mixed getConst(string $key);
+     * (+) array getClassInterfaces();
      * (+) bool isValidUuid(string $uuid);
      * (+) bool isValidEmail(string $email);
      * (+) bool isValidSHA512(string $hash);
-     * (+) mixed __call($callback, $parameters);
-     * (+) bool doesFunctionExist($functionName);
+     * (+) bool doesFunctionExist(string $functionName);
      * (+) bool isStringKey(string $str, array $keys);
      * (+) mixed get(string $key, string $subkey = null);
      * (+) mixed getProperty(string $name, string $key = null);
+     * (+) mixed __call(string $callback, array $parameters);
      * (+) object set(string $key, $value, string $subkey = null);
      * (+) object setProperty(string $name, $value, string $key = null);
      * (-) Exception throwExceptionError(array $error);

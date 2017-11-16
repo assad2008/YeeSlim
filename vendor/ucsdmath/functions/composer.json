@@ -5,7 +5,7 @@
     "keywords": ["functions", "ucsdmath", "component"],
     "homepage": "https://github.com/ucsdmath",
     "license": "MIT",
-    "time": "2017-02-05",
+    "time": "2017-10-29",
     "authors": [
         {
             "name": "Daryl Eisner",
@@ -13,16 +13,20 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.1",
         "nesbot/carbon": "1.22.1"
     },
     "require-dev": {
-        "mockery/mockery": "0.9.7",
-        "phpunit/phpunit": "6.0.5",
-        "fzaninotto/faker": "1.6.0",
-        "ucsdmath/date": "1.13.0",
-        "symfony/var-dumper": "3.2.2",
-        "squizlabs/php_codesniffer": "2.8.0"
+        "symfony/debug": "3.3.10",
+        "mockery/mockery": "1.0.0",
+        "phpunit/phpunit": "6.4.3",
+        "fzaninotto/faker": "1.7.1",
+        "ucsdmath/date": "1.28.0",
+        "symfony/var-dumper": "3.3.10",
+        "symfony/browser-kit": "3.3.10",
+        "symfony/dom-crawler": "3.3.10",
+        "symfony/options-resolver": "3.3.10",
+        "squizlabs/php_codesniffer": "3.1.1"
     },
     "autoload": {
         "psr-4": {
@@ -34,7 +38,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.13-dev"
+            "dev-master": "1.28-dev"
         }
     },
     "minimum-stability": "dev"

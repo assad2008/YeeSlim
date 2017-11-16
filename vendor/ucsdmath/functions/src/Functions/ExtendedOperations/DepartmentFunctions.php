@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -27,10 +27,10 @@ use Carbon\Carbon;
  *
  * Method list: (+) @api, (-) protected or private visibility.
  *
- * (+) array getMathOffices();
- * (+) array getAPMOptGroups();
+ * (+) array  getMathOffices();
+ * (+) array  getAPMOptGroups();
  * (+) string getCurrentQuarter();
- * (+) array getEducationDegrees();
+ * (+) array  getEducationDegrees();
  * (+) string getOptionsDropIsEditable(array $options);
  * (+) string renderAPMOptionsDrop(array $options, string $selected = null);
  * (+) string renderOptionsDropArray(array $options, string $selected = null);
@@ -267,12 +267,10 @@ trait DepartmentFunctions
      * @param int    $pad      The space indented setting or integer
      *
      * @return string
-     *
-     * @api
      */
     protected function renderDegreeOptionsLine(string $selected, int $pad): string
     {
-        return (! isset($selected) || $selected === "" || $selected === "-")
+        return (!isset($selected) || $selected === "" || $selected === "-")
             ? sprintf('<option value="%s" selected="selected">%s</option>%s%s', '-', '&mdash;', "\n", $this->getSpaces($pad))
             : sprintf('<option value="%s">%s</option>%s%s', '-', '&mdash;', "\n", $this->getSpaces($pad));
     }

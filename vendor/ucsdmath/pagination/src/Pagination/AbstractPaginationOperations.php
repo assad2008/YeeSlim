@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -48,7 +48,7 @@ abstract class AbstractPaginationOperations extends AbstractPagination
      *
      * @api
      */
-    const VERSION = '1.13.0';
+    public const VERSION = '1.28.0';
 
     //--------------------------------------------------------------------------
 
@@ -96,11 +96,11 @@ abstract class AbstractPaginationOperations extends AbstractPagination
     /**
      * Get the next page number.
      *
-     * @return int|null
+     * @return null|int
      *
      * @api
      */
-    public function getCurrentPageFirstItem()
+    public function getCurrentPageFirstItem(): ?int
     {
         $first = ((int) $this->currentPageNumber - 1) * (int) $this->itemsPerPage + 1;
 
@@ -112,11 +112,11 @@ abstract class AbstractPaginationOperations extends AbstractPagination
     /**
      * Get the last item for the current page.
      *
-     * @return int
+     * @return null|int
      *
      * @api
      */
-    public function getCurrentPageLastItem(): int
+    public function getCurrentPageLastItem(): ?int
     {
         $first = $this->getCurrentPageFirstItem();
         if ($first === null) {
@@ -260,11 +260,11 @@ abstract class AbstractPaginationOperations extends AbstractPagination
     /**
      * Get the next page number.
      *
-     * @return int|null
+     * @return null|int
      *
      * @api
      */
-    public function getNextPage()
+    public function getNextPage(): ?int
     {
         return (int) $this->currentPageNumber < $this->pageCount ? (int) $this->currentPageNumber + 1 : null;
     }
@@ -274,11 +274,11 @@ abstract class AbstractPaginationOperations extends AbstractPagination
     /**
      * Get the previous page number.
      *
-     * @return int|null
+     * @return null|int
      *
      * @api
      */
-    public function getPrevPage()
+    public function getPrevPage(): ?int
     {
         return (int) $this->currentPageNumber > 1 ? (int) $this->currentPageNumber - 1 : null;
     }
@@ -288,11 +288,11 @@ abstract class AbstractPaginationOperations extends AbstractPagination
     /**
      * Get the next page url.
      *
-     * @return string|null
+     * @return null|string
      *
      * @api
      */
-    public function getNextUrl()
+    public function getNextUrl(): ?string
     {
         return $this->getNextPage() ? $this->getPageUrl($this->getNextPage()) : null;
     }
@@ -302,11 +302,11 @@ abstract class AbstractPaginationOperations extends AbstractPagination
     /**
      * Get the previous page url.
      *
-     * @return string|null
+     * @return null|string
      *
      * @api
      */
-    public function getPrevUrl()
+    public function getPrevUrl(): ?string
     {
         return $this->getPrevPage() ? $this->getPageUrl($this->getPrevPage()) : null;
     }

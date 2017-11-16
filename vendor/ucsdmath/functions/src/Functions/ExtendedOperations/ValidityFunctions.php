@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -638,7 +638,7 @@ trait ValidityFunctions
     /**
      * Return a current MySQL timestamp.
      *
-     * @return string The MySQL datetime (e.g., 2017-02-05 07:09:00)
+     * @return string The MySQL datetime (e.g., 2017-10-29 07:09:00)
      */
     public function getMySQLTimestamp(): string
     {

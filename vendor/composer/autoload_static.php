@@ -8,10 +8,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '65fec9ebcfbb3cbb4fd0d519687aea01' => __DIR__ . '/..' . '/danielstjules/stringy/src/Create.php',
         '7745382c92b7799bf1294b1f43023ba2' => __DIR__ . '/..' . '/tracy/tracy/src/shortcuts.php',
         'a630172eaa9c0ebea1574d4268022476' => __DIR__ . '/../..' . '/src/func/functions.php',
@@ -33,6 +33,11 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
             'UCSDMath\\Pagination\\' => 20,
             'UCSDMath\\Functions\\' => 19,
             'UAParser\\' => 9,
+        ),
+        'T' => 
+        array (
+            'Twig\\Extensions\\' => 16,
+            'Twig\\' => 5,
         ),
         'S' => 
         array (
@@ -56,6 +61,7 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
@@ -132,6 +138,14 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         array (
             0 => __DIR__ . '/..' . '/ua-parser/uap-php/src',
         ),
+        'Twig\\Extensions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/extensions/src',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -187,6 +201,10 @@ class ComposerStaticInitf2c9006dfd953e7c2ec92fcbee16a1ad
         'RKA\\Middleware\\' => 
         array (
             0 => __DIR__ . '/..' . '/akrabat/rka-ip-address-middleware/src',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (

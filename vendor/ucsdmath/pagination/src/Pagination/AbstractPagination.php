@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -65,7 +65,7 @@ use UCSDMath\Functions\ServiceFunctionsInterface;
  * (+) string __toString();
  * (+) string getUrlPattern();
  * (+) string getPageUrl($pageNumber);
- * (+) mixed __call($callback, $parameters);
+ * (+) mixed __call(string $callback, array $parameters);
  * (+) PaginationInterface recalculate(array $pageSettings);
  * (+) PaginationInterface setUrlPattern(string $urlPattern);
  * (+) PaginationInterface setMaxPagesToShow(int $maxPagesToShow);
@@ -91,7 +91,7 @@ abstract class AbstractPagination implements PaginationInterface, ServiceFunctio
      *
      * @api
      */
-    const VERSION = '1.13.0';
+    public const VERSION = '1.28.0';
 
     //--------------------------------------------------------------------------
 
@@ -185,7 +185,7 @@ abstract class AbstractPagination implements PaginationInterface, ServiceFunctio
      *    'isSearchPatternUsed' => (bool) false
      *    'isSortPatternUsed'   => (bool) false
      *
-     * @param string $pageSettings The startup configuration setting.
+     * @param array $pageSettings The startup configuration setting.
      *
      * @return PaginationInterface The current instance
      *
@@ -296,13 +296,13 @@ abstract class AbstractPagination implements PaginationInterface, ServiceFunctio
      * (or any instances of \Closure).
      *
      * @param string $callback   The named callable to be called.
-     * @param mixed  $parameters The parameter set to be passed to the callback (as an indexed array).
+     * @param array  $parameters The parameter set to be passed to the callback (as an indexed array).
      *
      * @return mixed  the return value of the callback, or false on error.
      *
      * @api
      */
-    public function __call($callback, $parameters)
+    public function __call(string $callback, array $parameters)
     {
         return call_user_func_array($this->$callback, $parameters);
     }
@@ -535,16 +535,16 @@ abstract class AbstractPagination implements PaginationInterface, ServiceFunctio
      * (+) bool has(string $key);
      * (+) string getClassName();
      * (+) int getInstanceCount();
-     * (+) array getClassInterfaces();
      * (+) mixed getConst(string $key);
+     * (+) array getClassInterfaces();
      * (+) bool isValidUuid(string $uuid);
      * (+) bool isValidEmail(string $email);
      * (+) bool isValidSHA512(string $hash);
-     * (+) mixed __call($callback, $parameters);
-     * (+) bool doesFunctionExist($functionName);
+     * (+) bool doesFunctionExist(string $functionName);
      * (+) bool isStringKey(string $str, array $keys);
      * (+) mixed get(string $key, string $subkey = null);
      * (+) mixed getProperty(string $name, string $key = null);
+     * (+) mixed __call(string $callback, array $parameters);
      * (+) object set(string $key, $value, string $subkey = null);
      * (+) object setProperty(string $name, $value, string $key = null);
      * (-) Exception throwExceptionError(array $error);

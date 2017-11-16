@@ -1,26 +1,20 @@
 # Pagination
 <table border="0">
   <tr>
-    <td width="310"><img height="160" width="310"alt="UCSDMath - Mathlink" src="https://github.com/ucsdmath/Testing/blob/master/ucsdmath-logo.png"></td>
+    <td width="300"><img height="240" width="290" alt="UCSDMath - Mathlink" src="https://github.com/ucsdmath/Pagination/blob/master/resource/img/pagination.png"></td>
     <td><h3>A Development Project in PHP</h3><p><strong>UCSDMath</strong> provides a testing framework for general internal Intranet software applications for the UCSD, Department of Mathematics. This is used for development and testing only. [not for production]</p>
-
 <table width="550"><tr><td width="120"><b>Travis CI</b></td><td width="250"><b>SensioLabs</b></td><td width="180"><b>Dependencies</b></td></tr><tr>
-
     <td width="120" align="center">
         <a href="https://travis-ci.org/ucsdmath/Pagination">
         <img src="https://travis-ci.org/ucsdmath/Pagination.svg?branch=master" style="float: left; margin: 0px 0px 10px 10px;"></a><br>
-
         <a href="https://www.codacy.com/app/ucsdmath-project/Pagination">
         <img src="https://api.codacy.com/project/badge/Grade/712cf72f522447e88528886b9d02448c"></a><br>
-
         <a href="https://scrutinizer-ci.com/g/ucsdmath/Pagination/?branch=master">
         <img src="https://img.shields.io/scrutinizer/g/ucsdmath/Pagination.svg"></a>
     </td>
-
     <td width="250" align="center">
         <a href="https://insight.sensiolabs.com/projects/4697add0-76b8-48d1-98bb-aa24eb472d5c">
         <img src="https://insight.sensiolabs.com/projects/4697add0-76b8-48d1-98bb-aa24eb472d5c/big.png" style="float: right; margin: 0px 0px 10px 10px;" width="212" height="51"></a><br>
-
         <a href="https://travis-ci.org/ucsdmath/Pagination"><img src="https://img.shields.io/badge/PHP-%207.1%20Tested%20-33cc33.svg"></a>
     </td>
     <td width="180" align="center">
@@ -49,7 +43,7 @@
         <img src="https://poser.pugx.org/ucsdmath/Pagination/v/stable"></a></td>
     <td valign="top" width="108" align="center">
         <a href="https://php.net/">
-        <img src="https://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg"></a></td>
+        <img src="https://img.shields.io/badge/PHP-%3E%3D%207.1-8892BF.svg"></a></td>
     <td valign="top" width="150" align="center">
         <a href="https://packagist.org/packages/ucsdmath/Pagination">
         <img src="https://poser.pugx.org/ucsdmath/Pagination/downloads"></a></td>
@@ -77,7 +71,7 @@ adding the ucsdmath/pagination package to your composer.json file:
 
 ```
 "require": {
-    "php": "^7.0",
+    "php": "^7.1",
     "ucsdmath/pagination": "dev-master"
 },
 ```

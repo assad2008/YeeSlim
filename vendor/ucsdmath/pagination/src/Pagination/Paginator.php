@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -84,7 +84,7 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
      *
      * @api
      */
-    const VERSION = '1.13.0';
+    public const VERSION = '1.28.0';
 
     //--------------------------------------------------------------------------
 
@@ -337,7 +337,7 @@ class Paginator extends AbstractPaginationOperations implements PaginationInterf
                 $pages[] = $this->createPage($i, $i === (int) $this->currentPageNumber);
             }
         } else {
-            list($slidingStart, $slidingEnd) = $this->getAsArraySlidingRange();
+            [$slidingStart, $slidingEnd] = $this->getAsArraySlidingRange();
             $pages = $this->getAsArrayListingPages($slidingStart, $slidingEnd);
         }
 

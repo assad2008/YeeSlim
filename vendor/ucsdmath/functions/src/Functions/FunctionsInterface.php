@@ -3,7 +3,7 @@
 /*
  * This file is part of the UCSDMath package.
  *
- * (c) 2015-2017 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
+ * (c) 2015-2018 UCSD Mathematics | Math Computing Support <mathhelp@math.ucsd.edu>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -35,26 +35,13 @@ interface FunctionsInterface
      * @var string VALID_UUID_PATTERN    The valid UUID v4 regex pattern (Universally Unique Identifier)
      * @var string DEFAULT_LINE          The HTML line charater type used in department functions
      */
-    const FRAMEWORK_MINIMUM_PHP = '7.0.0';
-    const DEFAULT_CHARSET       = 'UTF-8';
-    const CRLF                  = "\r\n";
-    const REQUIRE_HTTPS         = true;
-    const DEFAULT_TIMEZONE      = 'America/Los_Angeles';
-    const VALID_UUID_PATTERN    = '/^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i';
-    const DEFAULT_LINE          = '&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;';
-
-    //--------------------------------------------------------------------------
-
-    /**
-     * Sanitize a float.
-     *
-     * @param string|int|float $number The float to sanitize
-     *
-     * @return float
-     *
-     * @api
-     */
-    public function sanitizeFloat($number): float;
+    public const FRAMEWORK_MINIMUM_PHP = '7.1.0';
+    public const DEFAULT_CHARSET       = 'UTF-8';
+    public const CRLF                  = "\r\n";
+    public const REQUIRE_HTTPS         = true;
+    public const DEFAULT_TIMEZONE      = 'America/Los_Angeles';
+    public const VALID_UUID_PATTERN    = '/^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$/i';
+    public const DEFAULT_LINE          = '&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;';
 
     //--------------------------------------------------------------------------
 }

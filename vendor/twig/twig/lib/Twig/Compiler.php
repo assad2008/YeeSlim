@@ -136,7 +136,7 @@ class Twig_Compiler
     public function repr($value)
     {
         if (is_int($value) || is_float($value)) {
-            if (false !== $locale = setlocale(LC_NUMERIC, 0)) {
+            if (false !== $locale = setlocale(LC_NUMERIC, '0')) {
                 setlocale(LC_NUMERIC, 'C');
             }
 
@@ -236,3 +236,6 @@ class Twig_Compiler
         return sprintf('__internal_%s', hash('sha256', uniqid(mt_rand(), true), false));
     }
 }
+
+class_alias('Twig_Compiler', 'Twig\Compiler', false);
+class_exists('Twig_Node');
